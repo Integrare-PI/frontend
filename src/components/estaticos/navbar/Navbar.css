@@ -1,0 +1,15 @@
+.cursor{
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+.text-decorator-none{
+    text-decoration: none;
+}
+
+.barra{
+    background-color: #ffc234!important;
+    display: flex!important;
+    justify-content: space-evenly!important;
+}
+
