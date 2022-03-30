@@ -1,0 +1,17 @@
+.textos1{
+   font-weight: bold !important;
+}
+
+.imagem{
+    background-image: url(https://giphy.com/embed/QrRvearRNwZc6nilIC);
+    background-repeat: no-repeat;
+    width: 80vh;
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+    padding-top: 10px;
+}
+
+.text-decorator-none{
+    text-decoration: none;
+}
