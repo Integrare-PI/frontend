@@ -8,3 +8,5 @@ interface User{
 }
 
 export default User
+
+/* atençaõ ao git e a orientação aos detalhes */
