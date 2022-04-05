@@ -65,7 +65,7 @@ function Contatos() {
                         <Box className="box">
                             <Box className="inner">
                                 <Box className="front">
-                                    <img src='https://media-exp1.licdn.com/dms/image/C4D03AQGmOF54lcRbyQ/profile-displayphoto-shrink_200_200/0/1638384184536?e=1653523200&v=beta&t=Dk9lDfMwJqCoIYm7CThcp0QU4re4bBwfbhg6hq6OsW0' alt='foto' />
+                                    <img src='https://media-exp1.licdn.com/dms/image/C4E03AQGjd3lo3lyvtw/profile-displayphoto-shrink_200_200/0/1648249072917?e=1654732800&v=beta&t=hj3AndxXMRWpMWMjlLtuHCwNxZMnq81YwGqEXGdKG34' alt='foto' />
 
                                 </Box>
                                 <Box className="back">
@@ -80,7 +80,7 @@ function Contatos() {
                         <Box className="box">
                             <Box className="inner">
                                 <Box className="front">
-                                    <img src='https://media-exp1.licdn.com/dms/image/C4D35AQFzVDZq6TuF4Q/profile-framedphoto-shrink_200_200/0/1614459135290?e=1648303200&v=beta&t=JwoTtezTJ6mUbUEN_nGGC2coijUdY5wL4x0ZlHwY-go' alt='foto' />
+                                    <img src='https://media-exp1.licdn.com/dms/image/C4D35AQFzVDZq6TuF4Q/profile-framedphoto-shrink_200_200/0/1614459135290?e=1649268000&v=beta&t=jfmEQkPePQqduy72FPfq0XqsF5ionMIhs0QNHJZIank' alt='foto' />
 
                                 </Box>
                                 <Box className="back">
