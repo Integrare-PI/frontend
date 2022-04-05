@@ -16,7 +16,7 @@ function Login() {
         senha: "",
         tipo_usuario: "",
         foto: "",
-        token:""
+        token: ""
     })
 
     function updatedModel(e: ChangeEvent<HTMLInputElement>) {
@@ -44,34 +44,31 @@ function Login() {
     }
 
     return (
-        <Grid container direction='row' justifyContent='center' alignItems='center'>
-            <Grid alignItems='center' xs={6}>
-                <Box paddingX={20}>
-                    <form onSubmit={onSubmit}>
-                        <Typography variant='h3' gutterBottom color='textPrimary' component='h3' className='textos1'>Entrar</Typography>
-                        <TextField value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='usuário' variant='outlined' name='usuario' margin='normal' fullWidth required/>
-                        <TextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth required/>
-                        <Box marginTop={2} textAlign='center'>
-                            <Button className='botao' type='submit' variant='contained' color='primary'>
-                                Logar
-                            </Button>
-                        </Box>
-                    </form>
-                    <Box display='flex' justifyContent='center' marginTop={2}>
-                        <Box marginRight={1}>
-                            <Typography variant='subtitle1' gutterBottom align='center'>Não tem uma conta?</Typography>
-                        </Box>
-                        <Link to='/cadastrousuario'>
-                            <Typography variant='subtitle1' gutterBottom align='center' className='textos1'>Cadastre-se</Typography>
-                        </Link>
+            <Grid container direction='row' justifyContent='center' alignItems='center'>
+                <Grid alignItems='center' xs={12} className='imagem'>
+                    <Box paddingX={60} alignItems='center'>
+                        <form onSubmit={onSubmit}>
+                            <Typography variant='h3' gutterBottom color='textPrimary' component='h3'  className='textos1'>Entrar</Typography>
+                            <TextField value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='usuário' variant='outlined' name='usuario' margin='normal' fullWidth required />
+                            <TextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth required />
+                            <Box marginTop={2} textAlign='center'>
+                                <Button className='botao' type='submit' variant='contained' color='primary'>
+                                    Logar
+                                </Button>
+                            </Box>
+                        </form>
+                        <Box display='flex' justifyContent='center' marginTop={2}>
+                            <Box marginRight={1}>
+                                <Typography variant='subtitle1' gutterBottom align='center'>Não tem uma conta?</Typography>
+                            </Box>
+                            <Link to='/cadastrousuario'>
+                                <Typography variant='subtitle1' gutterBottom align='center' className='textos1'>Cadastre-se</Typography>
+                            </Link>
 
+                        </Box>
                     </Box>
-                </Box>
+                </Grid>
             </Grid>
-            <Grid xs={6} className='imagem'>
-                <iframe src="https://giphy.com/embed/QrRvearRNwZc6nilIC" width="480" height="480" frameBorder="0" ></iframe>
-            </Grid>
-        </Grid>
     );
 }
 

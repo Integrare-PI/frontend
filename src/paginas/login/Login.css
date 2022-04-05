@@ -1,17 +1,28 @@
 .textos1{
    font-weight: bold !important;
+   text-align: center;
 }
 
 .imagem{
-    background-image: url(https://giphy.com/embed/QrRvearRNwZc6nilIC);
-    background-repeat: no-repeat;
-    width: 80vh;
-    min-height: 80vh;
-    background-size: cover;
+    background-image: url(https://i.ibb.co/TKgfh9B/fundo-integrare.png);
+    background-repeat: no-repeat !important;
+    width: 100vh !important;
+    min-height: 100vh !important;
+    background-size: cover !important;
     background-position: center;
-    padding-top: 10px;
 }
 
 .text-decorator-none{
     text-decoration: none;
+}
+
+.MuiBox-root-18 {
+    align-items: center;
+    padding-left: 480px;
+    padding-right: 480px;
+    padding-top: 350px!important;
+}
+
+.MuiFormControl-root{
+    background-color: rgba(255, 255, 255, 0.452);
 }

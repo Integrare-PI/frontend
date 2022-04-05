@@ -9,7 +9,10 @@ function Contatos() {
         <>
             <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
                 <Grid item xs={12} >
-                <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='sobre'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem dolor amet praesentium placeat asperiores, adipisci enim tempora, ex, consequatur qui assumenda. Et in sint numquam, quis nulla possimus nihil nostrum.</Typography>
+                <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="justify" className='sobre'>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem dolor amet praesentium placeat asperiores, adipisci enim tempora, ex, consequatur qui assumenda. Et in sint numquam, quis nulla possimus nihil nostrum.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem dolor amet praesentium placeat asperiores, adipisci enim tempora, ex, consequatur qui assumenda. Et in sint numquam, quis nulla possimus nihil nostrum.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem dolor amet praesentium placeat asperiores, adipisci enim tempora, ex, consequatur qui assumenda. Et in sint numquam, quis nulla possimus nihil nostrum</p>.</Typography>
                 </Grid>
                 
                 <Grid alignItems="center" container direction="row" justifyContent="center" item xs={12}>

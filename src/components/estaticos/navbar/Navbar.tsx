@@ -18,7 +18,7 @@ function Navbar() {
                         
                     <Link to='/home' className='text-decorator-none'>
                         <Box mx={1} className='cursor'>
-                            <Typography variant="h6" color="inherit">
+                            <Typography variant="h6" color="inherit" className='titulos'>
                                 Início
                             </Typography>
                         </Box>
@@ -26,7 +26,7 @@ function Navbar() {
 
                     <Link to="/posts" className="text-decorator-none">
                             <Box mx={1} className='cursor'>
-                                <Typography variant="h6" color="inherit">
+                                <Typography variant="h6" color="inherit" className='titulos'>
                                     Postagens
                                 </Typography>
                             </Box>
@@ -34,14 +34,14 @@ function Navbar() {
                         
                         <Link to="/temas" className="text-decorator-none">
                             <Box mx={1} className='cursor'>
-                                <Typography variant="h6" color="inherit">
+                                <Typography variant="h6" color="inherit" className='titulos'> 
                                     Temas
                                 </Typography>
                             </Box>
                         </Link>
                         <Link to="/formularioTema" className="text-decorator-none">
                         <Box mx={1} className='cursor'>
-                            <Typography variant="h6" color="inherit">
+                            <Typography variant="h6" color="inherit" className='titulos'>
                                 Novos Temas
                             </Typography>
                         </Box>
@@ -49,7 +49,7 @@ function Navbar() {
 
                         <Link to='/contatos' className='text-decorator-none'>
                             <Box mx={1} className='cursor'>
-                                <Typography variant="h6" color="inherit">
+                                <Typography variant="h6" color="inherit" className='titulos'>
                                     Sobre nós
                                 </Typography>
                             </Box>
@@ -57,7 +57,7 @@ function Navbar() {
 
                         <Link to='/login' className='text-decorator-none'>
                             <Box mx={1} className='cursor'>
-                                <Typography variant="h6" color="inherit">
+                                <Typography variant="h6" color="inherit" className='titulos'>
                                     Sair
                                 </Typography>
                             </Box>

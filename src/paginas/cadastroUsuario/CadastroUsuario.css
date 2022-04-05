@@ -1,4 +1,21 @@
-.btnCancelar{
+.botao{
     text-decoration:  none !important;
     margin-right: 20px !important;
-    }
+}
+
+.MuiBox-root-18 {
+    align-items: center;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 100px;
+}
+
+.imagem2{
+    background-image: url(https://i.ibb.co/Xs9sfPt/fundo-cadastrar-1.png);
+    background-repeat: no-repeat !important;
+    width: 100vh !important;
+    min-height: 100vh !important;
+    background-size: cover !important;
+    background-position: center;
+}
+

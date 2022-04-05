@@ -1,15 +1,25 @@
-.cursor{
+.cursor {
     cursor: pointer;
     color: rgb(0, 0, 0);
 }
 
-.text-decorator-none{
+.text-decorator-none {
     text-decoration: none;
+
 }
 
-.barra{
-    background-color: #ffc234!important;
-    display: flex!important;
-    justify-content: space-evenly!important;
+.barra {
+    background-color: #3d3f46cc !important;
+    display: flex !important;
+    justify-content: space-evenly !important;
+    padding-bottom: 20px !important;
+    padding-top: 20px !important;
 }
 
+.titulos {
+    color: white !important;
+}
+
+body {
+    background-color: #f3f1dfcc;
+}
