@@ -13,8 +13,10 @@ import CadastroPost from './components/postagens/cadastroPost/CadastroPost';
 import CadastroTema from './components/temas/CadastroTema/CadastroTema';
 import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPostagem';
 import DeletarTema from './components/temas/deletarTema/DeletarTema';
+ 
+//atualizado
 
-function App() {
+function App() {  
   return (
     <Router>
       <Navbar />
