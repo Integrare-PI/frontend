@@ -11,9 +11,9 @@
 .barra {
     background-color: #3d3f46cc !important;
     display: flex !important;
-    justify-content: space-evenly !important;
-    padding-bottom: 20px !important;
-    padding-top: 20px !important;
+    /* justify-content: space-evenly !important; */
+    /* padding-bottom: 20px !important;
+    padding-top: 20px !important; */
 }
 
 .titulos {
