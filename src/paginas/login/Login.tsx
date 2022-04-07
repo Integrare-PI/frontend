@@ -4,9 +4,9 @@ import { Link, useHistory } from 'react-router-dom';
 import { login } from '../../services/Services';
 import UserLogin from '../../models/UserLogin';
 import './Login.css';
-import { toast } from 'react-toastify';
 import { addToken } from '../../store/tokens/actions';
 import { useDispatch } from 'react-redux';
+import { toast } from 'react-toastify';
 
 function Login() {
     let history = useHistory()
@@ -44,7 +44,7 @@ function Login() {
         try {
             await login(`/usuarios/logar`, userLogin, setToken)
 
-            toast.error('Usuário logado com sucesso!', {
+            toast.success('Usuário logado com sucesso!', {
                 position: "top-right",
                 autoClose:2000,
                 hideProgressBar: false,

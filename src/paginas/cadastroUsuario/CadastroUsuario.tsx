@@ -6,6 +6,7 @@ import { Grid, Box, Typography, Button, TextField } from '@material-ui/core';
 import './CadastroUsuario.css';
 import { toast } from 'react-toastify';
 
+
 function CadastroUsuario() {
 
     let history = useHistory();

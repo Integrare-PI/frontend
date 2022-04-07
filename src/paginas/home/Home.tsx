@@ -1,14 +1,19 @@
 import React, { useEffect } from 'react';
 import { Typography, Box, Grid, Button } from '@material-ui/core';
 import './Home.css';
-import TabPostagem from '../../components/postagens/tabpostagem/TabPostagem';
 import { useHistory } from 'react-router-dom';
 import useLocalStorage from 'react-use-localstorage';
 import { toast } from 'react-toastify';
+import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { TokenState } from '../../store/tokens/tokensReducer';
+
 
 function Home() {
     let history = useHistory();
-    const [token, setToken] = useLocalStorage('token');
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+    );
     
     useEffect(() => {
       if (token == "") {
@@ -38,7 +43,9 @@ function Home() {
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
                         </Box>
+                        <Link to="/posts" className="text-decorator-none">
                         <Button variant="outlined" className='botao'>Ver Postagens</Button>
+                        </Link>
                     </Box>
                 </Grid>
                 <Grid item xs={6} className='imagemhome'></Grid>
