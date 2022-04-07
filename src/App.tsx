@@ -13,11 +13,16 @@ import CadastroPost from './components/postagens/cadastroPost/CadastroPost';
 import CadastroTema from './components/temas/CadastroTema/CadastroTema';
 import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPostagem';
 import DeletarTema from './components/temas/deletarTema/DeletarTema';
- 
+import {ToastContainer} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css' 
+
 //atualizado
 
 function App() {  
   return (
+    
+    <Provider store={store}>
+    <ToastContainer />
     <Router>
       <Navbar />
         <Switch>
