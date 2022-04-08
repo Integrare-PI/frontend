@@ -28,7 +28,7 @@ function Login() {
     useEffect(() => {
         if(token !== ""){
             dispatch(addToken(token));
-            history.push('/home')
+            history.push('/feed')
         }
     }, [token])
     function updatedModel(e: ChangeEvent<HTMLInputElement>) {
