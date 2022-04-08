@@ -17,6 +17,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import { Provider } from 'react-redux';
 import store from './store/store';
 import { ToastContainer } from 'react-toastify';
+import Home from './paginas/home/Home';
 
 //atualizado
 
@@ -31,7 +32,11 @@ function App() {
           <div style={{minHeight: '100vh'}}>
 
             <Route exact path='/'>
-              <Login />
+              <Home />
+            </Route>
+
+            <Route path='/home'>
+              <Home />
             </Route>
 
             <Route path='/login'>
