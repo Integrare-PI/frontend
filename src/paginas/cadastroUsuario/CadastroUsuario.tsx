@@ -170,11 +170,11 @@ function CadastroUsuario() {
 
                         <Box marginTop={2} textAlign='center'>
                             <Link to='/login' className='text-decorator-none'>
-                                <Button variant='contained' color='secondary' className='botao'>
+                                <Button variant='contained' color='secondary' className='botao2'>
                                     Cancelar
                                 </Button>
                             </Link>
-                            <Button type='submit' variant='contained' color='primary'>
+                            <Button type='submit' variant='contained' color='primary' className='botao'>
                                 Cadastrar
                             </Button>
                         </Box>

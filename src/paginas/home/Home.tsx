@@ -33,12 +33,12 @@ function Home() {
 
                 <Grid item xs={8}>
                     <Box paddingLeft={7} >
-                        <img src="https://i.imgur.com/H88yIo2.png" alt="" className='imagemhome' />
+                        <img src="https://i.ibb.co/GFbYc1B/pngwing-com-5.png" alt="crianças" className='imagemhome2'/>
                     </Box>
                 </Grid>
                 <Grid item xs={4} className="caixa">
                     <Box paddingRight={8}>
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="right" style={{ color: "#424242", fontWeight: "bold" }}>NÓS ACREDITAMOS QUE INICIATIVAS PRIVADAS PODEM REVITALIZAR ESPAÇOS PÚBLICOS.</Typography>
+                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="right" style={{ color: "#424242", fontWeight: "bold" }}>NÓS ACREDITAMOS NA EDUCAÇÃO INCLUSIVA E EQUITATIVA DE QUALIDADE.</Typography>
                         <Link to='/contatos'>
                         <Typography className='font2' variant="h6" gutterBottom color="textPrimary" component="h6" align="right" style={{ color: "#424242", fontWeight: "bold" }}>SAIBA MAIS</Typography>
                         </Link>

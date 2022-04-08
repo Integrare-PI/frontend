@@ -99,7 +99,7 @@ function Navbar() {
                         <Button color="inherit" style={{ fontWeight: "bold" }}>Entrar</Button>
                     </Link>
                     <Link to='/cadastrousuario' className='text-decorator-none2'>
-                        <Button color="inherit" style={{ fontWeight: "bold" }}>Cadastre-se</Button>
+                        <Button color="inherit" style={{ fontWeight: "bold" }} className='bot4'>Cadastre-se</Button>
                     </Link>
                 </Box>
             </Toolbar>

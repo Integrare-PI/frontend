@@ -1,6 +1,13 @@
 .botao{
     text-decoration:  none !important;
-    margin-right: 20px !important;
+    margin-left: 20px !important;
+    font-weight: bold!important;
+}
+
+.botao2{
+    text-decoration:  none !important;
+    background-color: #ED4245!important;
+    font-weight: bold!important;
 }
 
 .MuiBox-root-18 {
@@ -18,4 +25,5 @@
     background-size: cover !important;
     background-position: center;
 }
+
 

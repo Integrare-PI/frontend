@@ -5,12 +5,11 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import {Typography, Box, Grid } from '@material-ui/core';
 import './Footer.css';
 
-
 function Footer(){
     return (
         <>
-            <Grid container direction="row" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", backgroundColor: "#3e3eff" }}>
-                <Box paddingTop={1} paddingLeft={7} style={{ backgroundColor: "#3e3eff", height: "60px" }}>
+            <Grid container direction="row" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", backgroundColor: "#8D2E87" }}>
+                <Box paddingTop={1} paddingLeft={7} style={{ backgroundColor: "#8D2E87", height: "60px" }}>
                     <Box>
                         <Typography variant="subtitle2" align="left" gutterBottom style={{ color: "white" }} >© 2022 Copyright:</Typography>
                     </Box>
