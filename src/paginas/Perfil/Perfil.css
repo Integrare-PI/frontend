@@ -1,0 +1,46 @@
+.card-principal{
+    display: flex;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #8d2e8727;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 80vh;
+    margin: 20px;
+    border-radius: 30px;
+    background-color: #3f51b5;
+}
+
+.card-container-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 32px;
+}
+
+.card-imagem{
+    max-height: 250px;
+    border-radius: 32px;
+    object-fit: cover;
+}
+
+.card-container-texto{
+    max-width: 550px;
+    color: #fff;
+    text-align: justify;
+}
+
+.novotema{
+    text-decoration: none!important;
+}
+
+.cadastro{
+    height: 100px;
+    width: 200px;
+}

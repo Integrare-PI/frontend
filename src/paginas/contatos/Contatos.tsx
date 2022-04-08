@@ -102,10 +102,10 @@ function Contatos() {
                         </Box>
                         <Box alignItems="center" justifyContent="center" className='box-icones' >
                             <a href="https://github.com/BrunoRequena" target="_blank">
-                                <GitHubIcon style={{ fontSize: 50, color: "#3e3eff" }} />
+                                <GitHubIcon style={{ fontSize: 50, color: "#8D2E87" }} />
                             </a>
                             <a href="https://www.linkedin.com/in/bruno-requena-2795411a4/" target="_blank">
-                                <LinkedInIcon style={{ fontSize: 60, color: "#3e3eff" }} />
+                                <LinkedInIcon style={{ fontSize: 60, color: "#8D2E87" }} />
                             </a>
                         </Box>
 
@@ -130,10 +130,10 @@ function Contatos() {
                         <Box display="flex" alignItems="center" justifyContent="center" className='box-icones' >
 
                             <a href="https://github.com/GuGitt" target="_blank">
-                                <GitHubIcon style={{ fontSize: 50, color: "#3e3eff" }} />
+                                <GitHubIcon style={{ fontSize: 50, color: "#8D2E87" }} />
                             </a>
                             <a href="https://www.linkedin.com/in/gustavo-rodrigues-5824851b6/" target="_blank">
-                                <LinkedInIcon style={{ fontSize: 60, color: "#3e3eff" }} />
+                                <LinkedInIcon style={{ fontSize: 60, color: "#8D2E87" }} />
                             </a>
                         </Box>
                     </Box>
@@ -144,7 +144,7 @@ function Contatos() {
 
                         <Box >
                             <Typography variant='h5' component='h5' align='center'>
-                                Joyce Costa
+                                Joyce Lopes
                             </Typography>
                             <Typography variant='h6' component='h6' align='center'>
                                 Desenvolvedora Full Stack
@@ -157,10 +157,10 @@ function Contatos() {
                         <Box display="flex" alignItems="center" justifyContent="center" className='box-icones'>
 
                             <a href="https://github.com/joycelopes" target="_blank">
-                                <GitHubIcon style={{ fontSize: 50, color: "#3e3eff" }} />
+                                <GitHubIcon style={{ fontSize: 50, color: "#8D2E87" }} />
                             </a>
                             <a href="https://www.linkedin.com/in/joycecosta-oficial/" target="_blank">
-                                <LinkedInIcon style={{ fontSize: 60, color: "#3e3eff" }} />
+                                <LinkedInIcon style={{ fontSize: 60, color: "#8D2E87" }} />
                             </a>
                         </Box>
                     </Box>
@@ -185,10 +185,10 @@ function Contatos() {
                         <Box display="flex" alignItems="center" justifyContent="center" className='box-icones'>
 
                             <a href=" https://github.com/LauraBSouza" target="_blank">
-                                <GitHubIcon style={{ fontSize: 50, color: "#3e3eff" }} />
+                                <GitHubIcon style={{ fontSize: 50, color: "#8D2E87" }} />
                             </a>
                             <a href=" https://www.linkedin.com/in/laura-barros-souza/" target="_blank">
-                                <LinkedInIcon style={{ fontSize: 60, color: "#3e3eff" }} />
+                                <LinkedInIcon style={{ fontSize: 60, color: "#8D2E87" }} />
                             </a>
                         </Box>
                     </Box>
@@ -212,10 +212,10 @@ function Contatos() {
                         <Box display="flex" alignItems="center" justifyContent="center" className='box-icones'>
 
                             <a href="https://github.com/LucasRodriguees" target="_blank">
-                                <GitHubIcon style={{ fontSize: 50, color: "#3e3eff" }} />
+                                <GitHubIcon style={{ fontSize: 50, color: "#8D2E87" }} />
                             </a>
                             <a href=" https://www.linkedin.com/in/lucas-rodrigues-a264111b1/" target="_blank">
-                                <LinkedInIcon style={{ fontSize: 60, color: "#3e3eff" }} />
+                                <LinkedInIcon style={{ fontSize: 60, color: "#8D2E87" }} />
                             </a>
                         </Box>
                     </Box>
@@ -239,10 +239,10 @@ function Contatos() {
                         <Box display="flex" alignItems="center" justifyContent="center" className='box-icones'>
 
                             <a href="https://github.com/acceberc" target="_blank">
-                                <GitHubIcon style={{ fontSize: 50, color: "#3e3eff" }} />
+                                <GitHubIcon style={{ fontSize: 50, color: "#8D2E87" }} />
                             </a>
                             <a href=" https://www.linkedin.com/in/acceberc/" target="_blank">
-                                <LinkedInIcon style={{ fontSize: 60, color: "#3e3eff" }} />
+                                <LinkedInIcon style={{ fontSize: 60, color: "#8D2E87" }} />
                             </a>
                         </Box>
                     </Box>
@@ -266,10 +266,10 @@ function Contatos() {
                         <Box display="flex" alignItems="center" justifyContent="center" className='box-icones'>
 
                             <a href="https://github.com/WillMenezesSH" target="_blank">
-                                <GitHubIcon style={{ fontSize: 50, color: "#3e3eff" }} />
+                                <GitHubIcon style={{ fontSize: 50, color: "#8D2E87" }} />
                             </a>
                             <a href=" https://www.linkedin.com/in/willian-menezes-4aa169211/" target="_blank">
-                                <LinkedInIcon style={{ fontSize: 60, color: "#3e3eff" }} />
+                                <LinkedInIcon style={{ fontSize: 60, color: "#8D2E87" }} />
                             </a>
                         </Box>
                     </Box>

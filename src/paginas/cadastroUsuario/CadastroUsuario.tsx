@@ -169,7 +169,7 @@ function CadastroUsuario() {
                             fullWidth required />
 
                         <Box marginTop={2} textAlign='center'>
-                            <Link to='/login' className='text-decorator-none'>
+                            <Link to='/home' className='text-decorator-none'>
                                 <Button variant='contained' color='secondary' className='botao2'>
                                     Cancelar
                                 </Button>

@@ -4,7 +4,7 @@ import { Link, useHistory } from 'react-router-dom';
 import { login } from '../../services/Services';
 import UserLogin from '../../models/UserLogin';
 import './Login.css';
-import { addToken } from '../../store/tokens/actions';
+import { addToken, addId } from '../../store/tokens/actions';
 import { useDispatch } from 'react-redux';
 import { toast } from 'react-toastify';
 
@@ -25,12 +25,23 @@ function Login() {
         tipo_usuario: ""
     })
 
+    const [respUserLogin, setRespUserLogin] = useState<UserLogin>({
+        id: 0,
+        nome_completo: "",
+        usuario: "",
+        senha: "",
+        foto: "",
+        token: "",
+        tipo_usuario: ""
+    })
+
     useEffect(() => {
-        if(token !== ""){
+        if (token != '') {
             dispatch(addToken(token));
             history.push('/feed')
         }
     }, [token])
+
     function updatedModel(e: ChangeEvent<HTMLInputElement>) {
         setUserLogin({
             ...userLogin,

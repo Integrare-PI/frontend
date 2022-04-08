@@ -33,7 +33,8 @@ function CadastroPost() {
         texto_descricao: '',
         anexo: "",
         data: "",
-        tema: null
+        tema: null,
+        usuario: null
     })
 
     useEffect(() => {

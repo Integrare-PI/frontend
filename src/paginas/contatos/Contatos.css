@@ -3,6 +3,7 @@
   color: #505050!important;
   font-weight: bold !important;
   font-family: 'Source Sans Pro', sans-serif!important;  
+  font-size: 65px!important;
 }
 
 .box-fotos{
@@ -24,5 +25,5 @@
 
 .espaco-letras{
   letter-spacing: 1px!important;
-  
+  font-size: 25px!important;
 }

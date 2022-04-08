@@ -19,22 +19,24 @@
 
 
 .imagemhome{
-    background-image: url(https://i.ibb.co/z6tNGYK/pngwing-com-7.png);
+    background-image: url(https://i.ibb.co/GFbYc1B/pngwing-com-5.png);
     background-repeat: no-repeat !important;
-    width: 100vh !important;
-    min-height: 100vh !important;
-    background-size: cover !important;
+    width: 80vh !important;
+    min-height: 80vh !important;
     background-position: center;
 }
 
 .imagemhome2{
     background-repeat: no-repeat !important;
-    width: 130vh !important;
-    min-height: 100vh !important;
-    background-size: cover !important;
+    width: 50vh !important;
+    min-height: 50vh !important;
     background-position: center;
 }
 
 .caixa1{
     padding-bottom: 250px;
+}
+
+body{
+    background-color: #8d2e873e;
 }
