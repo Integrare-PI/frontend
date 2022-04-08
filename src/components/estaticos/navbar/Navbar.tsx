@@ -1,11 +1,11 @@
+import { AppBar, Box, Button, Toolbar, Typography } from '@material-ui/core';
 import React from 'react';
-import { AppBar, Toolbar, Typography, Box } from '@material-ui/core';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link, useHistory } from 'react-router-dom';
-import './Navbar.css'
-import { useDispatch, useSelector } from 'react-redux'
-import { TokenState } from '../../../store/tokens/tokensReducer'
-import { addToken } from '../../../store/tokens/actions'
-import { toast } from 'react-toastify'
+import { toast } from 'react-toastify';
+import { addToken } from '../../../store/tokens/actions';
+import { TokenState } from '../../../store/tokens/tokensReducer';
+import './Navbar.css';
 
 
 function Navbar() {
@@ -42,19 +42,15 @@ function Navbar() {
         navbarComponent =
             <AppBar position="static" className='barra'>
                 <Toolbar variant="dense">
-                    <Box className='cursor'>
-                        <Typography variant="h5" color="inherit">
-                            INTEGRARE
-                        </Typography>
-                    </Box>
+                    
 
 
                     <Box display="flex" justifyContent="space-between" className='titulos'>
 
-                        <Link to='/home' className='text-decorator-none'>
+                        <Link to='/feed' className='text-decorator-none'>
                             <Box mx={1} className='cursor'>
                                 <Typography variant="h6" color="inherit" className='titulos'>
-                                    Início
+                                    Integrare
                                 </Typography>
                             </Box>
                         </Link>
@@ -74,21 +70,9 @@ function Navbar() {
                                 </Typography>
                             </Box>
                         </Link>
-                        <Link to="/formularioTema" className="text-decorator-none">
-                            <Box mx={1} className='cursor'>
-                                <Typography variant="h6" color="inherit" className='titulos'>
-                                    Novos Temas
-                                </Typography>
-                            </Box>
-                        </Link>
+                        
 
-                        <Link to='/contatos' className='text-decorator-none'>
-                            <Box mx={1} className='cursor'>
-                                <Typography variant="h6" color="inherit" className='titulos'>
-                                    Sobre nós
-                                </Typography>
-                            </Box>
-                        </Link>
+                       
 
                         <Box mx={1} className='cursor' onClick={goLogout}>
                             <Typography variant="h6" color="inherit" className='titulos'>
@@ -102,6 +86,24 @@ function Navbar() {
                 </Toolbar>
             </AppBar>
 
+
+    }
+    else {
+        navbarComponent = <AppBar   className='barra' >
+            <Toolbar style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between" }}>
+                <Link to='/home' className='text-decorator-none'>
+                   Integrare
+                </Link>
+                <Box paddingRight={5}>
+                    <Link to='/login' className='text-decorator-none'>
+                        <Button color="inherit" style={{ fontWeight: "bold" }}>Entrar</Button>
+                    </Link>
+                    <Link to='/cadastrousuario' className='text-decorator-none2'>
+                        <Button color="inherit" style={{ fontWeight: "bold" }}>Cadastre-se</Button>
+                    </Link>
+                </Box>
+            </Toolbar>
+        </AppBar >
 
     }
 
