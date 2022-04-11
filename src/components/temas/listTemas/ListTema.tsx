@@ -55,7 +55,7 @@ function ListaTema() {
                     <Card variant="outlined" className='cards'>
                         <CardContent>
                             <Typography color="textSecondary" gutterBottom>
-                                Tema
+                                {tema.disciplinas}
                             </Typography>
                             <Typography variant="h5" component="h2">
                                 {tema.descricao}
