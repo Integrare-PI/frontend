@@ -87,7 +87,7 @@ function Contatos() {
                 <Grid container xs={12} justifyContent='center' alignItems='center' >
                     <Box justifyContent="center" alignItems="center">
                         <Box justifyContent="center" alignItems="center" >
-                            <img className='box-fotos' src="https://pngset.com/images/empty-circle-empty-profile-picture-blank-avatar-avatar-empty-baseball-cap-hat-clothing-apparel-transparent-png-2681281.png" alt="Dev Andreia" />
+                            <img className='box-fotos' src="https://imgur.com/xdf8Cv6.png" alt="Bruno Requena" />
                         </Box>
                         <Box >
                             <Typography variant='h5' component='h5' align='center'>
@@ -112,7 +112,7 @@ function Contatos() {
                     </Box>
                     <Box>
                         <Box justifyContent="center" alignItems="center">
-                            <img className='box-fotos' src="https://pngset.com/images/empty-circle-empty-profile-picture-blank-avatar-avatar-empty-baseball-cap-hat-clothing-apparel-transparent-png-2681281.png" alt="Dev Carlos" />
+                            <img className='box-fotos' src="https://imgur.com/55nGGhb.png" alt="Gustavo Rodrigues" />
                         </Box>
 
                         <Box >
@@ -139,7 +139,7 @@ function Contatos() {
                     </Box>
                     <Box>
                         <Box>
-                            <img className='box-fotos' src="https://pngset.com/images/empty-circle-empty-profile-picture-blank-avatar-avatar-empty-baseball-cap-hat-clothing-apparel-transparent-png-2681281.png" alt="Dev Renan" />
+                            <img className='box-fotos' src="https://imgur.com/99lEzdO.png" alt="Joyce Lopes" />
                         </Box>
 
                         <Box >
@@ -167,7 +167,7 @@ function Contatos() {
 
                     <Box>
                         <Box>
-                            <img className='box-fotos' src="https://pngset.com/images/empty-circle-empty-profile-picture-blank-avatar-avatar-empty-baseball-cap-hat-clothing-apparel-transparent-png-2681281.png" alt="Dev Thaís" />
+                            <img className='box-fotos' src="https://imgur.com/vYg5fSA.jpg" alt="Laura Barros" />
                         </Box>
 
                         <Box >
@@ -194,7 +194,7 @@ function Contatos() {
                     </Box>
                     <Box>
                         <Box>
-                            <img className='box-fotos' src="https://pngset.com/images/empty-circle-empty-profile-picture-blank-avatar-avatar-empty-baseball-cap-hat-clothing-apparel-transparent-png-2681281.png" alt="Dev Valter" />
+                            <img className='box-fotos' src="https://i.imgur.com/SX7yHHW.png" alt="Lucas Rodrigues" />
                         </Box>
 
                         <Box >
@@ -221,7 +221,7 @@ function Contatos() {
                     </Box>
                     <Box>
                         <Box>
-                            <img className='box-fotos' src="https://pngset.com/images/empty-circle-empty-profile-picture-blank-avatar-avatar-empty-baseball-cap-hat-clothing-apparel-transparent-png-2681281.png" alt="Dev Valter" />
+                            <img className='box-fotos' src="https://imgur.com/RjIAt9b.png" alt="Rebecca Cruz" />
                         </Box>
 
                         <Box >
@@ -248,7 +248,7 @@ function Contatos() {
                     </Box>
                     <Box>
                         <Box>
-                            <img className='box-fotos' src="https://pngset.com/images/empty-circle-empty-profile-picture-blank-avatar-avatar-empty-baseball-cap-hat-clothing-apparel-transparent-png-2681281.png" alt="Dev Valter" />
+                            <img className='box-fotos' src="https://imgur.com/IRza1pd.png" alt="Willian Menezes" />
                         </Box>
 
                         <Box >

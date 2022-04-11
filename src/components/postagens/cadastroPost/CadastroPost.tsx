@@ -20,7 +20,7 @@ function CadastroPost() {
 
     const token = useSelector<UserState, UserState["tokens"]>(
         (state) => state.tokens
-      );
+    );
 
     const [tema, setTema] = useState<Tema>({
         id: 0,
@@ -42,20 +42,20 @@ function CadastroPost() {
         if (token === "") {
             toast.error('Você precisa estar logado!', {
                 position: "top-right",
-                autoClose:2000,
+                autoClose: 2000,
                 hideProgressBar: false,
                 closeOnClick: true,
                 pauseOnHover: false,
                 draggable: false,
                 theme: "colored",
                 progress: undefined,
-      
+
             })
             history.push("/login")
         }
     }, [token])
 
-    
+
     useEffect(() => {
         setPostagem({
             ...postagem,
@@ -106,14 +106,14 @@ function CadastroPost() {
             })
             toast.success('Postagem atualizada com sucesso!', {
                 position: "top-right",
-                autoClose:2000,
+                autoClose: 2000,
                 hideProgressBar: false,
                 closeOnClick: true,
                 pauseOnHover: false,
                 draggable: false,
                 theme: "colored",
                 progress: undefined,
-      
+
             })
 
 
@@ -126,14 +126,14 @@ function CadastroPost() {
             })
             toast.success('Postagem cadastrada com sucesso!', {
                 position: "top-right",
-                autoClose:2000,
+                autoClose: 2000,
                 hideProgressBar: false,
                 closeOnClick: true,
                 pauseOnHover: false,
                 draggable: false,
                 theme: "colored",
                 progress: undefined,
-      
+
             })
 
         }
@@ -146,51 +146,59 @@ function CadastroPost() {
 
     return (
         <Container maxWidth="sm" className="topo">
-        <form onSubmit={onSubmit}>
-            <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro postagem</Typography>
+            <form onSubmit={onSubmit}>
+                <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro postagem</Typography>
 
-            <TextField
-                value={postagem.assunto}
-                onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)}
-                id="assunto" label="assunto" variant="outlined"
-                name="assunto" margin="normal" fullWidth
-            />
+                <TextField
+                    value={postagem.assunto}
+                    onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)}
+                    id="assunto" label="assunto" variant="outlined"
+                    name="assunto" margin="normal" fullWidth
+                />
 
-            <TextField
-                value={postagem.texto_descricao}
-                onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)}
-                id="texto_descricao" label="texto_descricao" name="texto_descricao" variant="outlined"
-                margin="normal" fullWidth
-            />
 
-            <FormControl>
-                <InputLabel id="demo-simple-select-helper-label">Tema </InputLabel>
+                <TextField
+                    value={postagem.texto_descricao}
+                    onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)}
+                    id="texto_descricao" label="texto_descricao" name="texto_descricao" variant="outlined"
+                    margin="normal" fullWidth
+                />
 
-                <Select
-                    labelId="demo-simple-select-helper-label"
-                    id="demo-simple-select-helper"
+                <TextField
+                    value={postagem.anexo}
+                    onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)}
+                    id="anexo" label="anexo" name="anexo" variant="outlined"
+                    margin="normal" fullWidth
+                />
 
-                    onChange={(e) => buscaId(`/temas/${e.target.value}`, setTema, {
-                        headers: {
-                            'Authorization': token
+                <FormControl>
+                    <InputLabel id="demo-simple-select-helper-label">Tema </InputLabel>
+
+                    <Select
+                        labelId="demo-simple-select-helper-label"
+                        id="demo-simple-select-helper"
+
+                        onChange={(e) => buscaId(`/temas/${e.target.value}`, setTema, {
+                            headers: {
+                                'Authorization': token
+                            }
+                        })}
+                    >
+
+                        {
+                            temas.map(item => (
+                                <MenuItem value={item.id}>{item.descricao}</MenuItem>
+                            ))
                         }
-                    })}
-                >
 
-                    {
-                        temas.map(item => (
-                            <MenuItem value={item.id}>{item.descricao}</MenuItem>
-                        ))
-                    }
-
-                </Select>
-                <FormHelperText>Escolha um tema para a postagem</FormHelperText>
-                <Button type="submit" className="bootao" variant="contained" color="primary">
-                    Finalizar
-                </Button>
-            </FormControl>
-        </form>
-    </Container>
+                    </Select>
+                    <FormHelperText>Escolha um tema para a postagem</FormHelperText>
+                    <Button type="submit" className="bootao" variant="contained" color="primary">
+                        Finalizar
+                    </Button>
+                </FormControl>
+            </form>
+        </Container>
     )
 }
 export default CadastroPost;
