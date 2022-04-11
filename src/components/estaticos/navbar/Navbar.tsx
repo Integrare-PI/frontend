@@ -50,7 +50,7 @@ function Navbar() {
                         <Link to='/feed' className='text-decorator-none'>
                             <Box mx={1} className='cursor'>
                                 <Typography variant="h6" color="inherit" className='titulos'>
-                                    Integrare
+                                    <img src="https://i.ibb.co/jHhYbvD/Integrare.png" alt="" />
                                 </Typography>
                             </Box>
                         </Link>
@@ -90,7 +90,7 @@ function Navbar() {
         navbarComponent = <AppBar   className='barra' >
             <Toolbar style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between" }}>
                 <Link to='/home' className='text-decorator-none'>
-                   Integrare
+                   <img src="https://i.ibb.co/jHhYbvD/Integrare.png" alt="" />
                 </Link>
                 <Box paddingRight={5}>
                     <Link to='/login' className='text-decorator-none'>
