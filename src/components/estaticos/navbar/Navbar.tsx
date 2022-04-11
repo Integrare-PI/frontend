@@ -89,15 +89,16 @@ function Navbar() {
     else {
         navbarComponent = <AppBar   className='barra' >
             <Toolbar style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between" }}>
-                <Link to='/home' className='text-decorator-none'>
-                   <img src="https://i.ibb.co/jHhYbvD/Integrare.png" alt="" />
+                <Link to='/home'  >
+                <img src="https://i.ibb.co/M94Z8M2/Group-5.png" alt=""></img>
+                <img src="https://i.ibb.co/jHhYbvD/Integrare.png" alt="" />
                 </Link>
                 <Box paddingRight={5}>
                     <Link to='/login' className='text-decorator-none'>
-                        <Button color="inherit" style={{ fontWeight: "bold" }}>Entrar</Button>
+                        <Button className='entrar' style={{ fontWeight: "bold" }}>Entrar</Button>
                     </Link>
-                    <Link to='/cadastrousuario' className='text-decorator-none2'>
-                        <Button color="inherit" style={{ fontWeight: "bold" }} className='bot4'>Cadastre-se</Button>
+                    <Link to='/cadastrousuario' className='text-decorator-none'>
+                        <Button  style={{ fontWeight: "bold" }} className='BOTAOO'>Cadastrar</Button>
                     </Link>
                 </Box>
             </Toolbar>
