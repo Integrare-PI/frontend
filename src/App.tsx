@@ -18,6 +18,7 @@ import store from './store/store';
 import { ToastContainer } from 'react-toastify';
 import Home from './paginas/home/Home';
 import 'react-toastify/dist/ReactToastify.css'
+import Perfil from './paginas/Perfil/Perfil';
 
 //atualizado
 
@@ -83,6 +84,10 @@ function App() {
             </Route>
             <Route path='/deletarTema/:id'>
               <DeletarTema />
+            </Route>
+
+            <Route path='/perfil'>
+              <Perfil />
             </Route>
             
           </div>

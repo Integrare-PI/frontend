@@ -17,26 +17,28 @@ function Login() {
 
     const [userLogin, setUserLogin] = useState<UserLogin>({
         id: 0,
-        nome_completo: "",
         usuario: "",
+        nome_completo: "",
         senha: "",
+        tipo_usuario: "",
         foto: "",
-        token: "",
-        tipo_usuario: ""
+        token: ""
+        
     })
 
     const [respUserLogin, setRespUserLogin] = useState<UserLogin>({
         id: 0,
-        nome_completo: "",
         usuario: "",
+        nome_completo: "",
         senha: "",
-        foto: "",
+        tipo_usuario: "",
         token: "",
-        tipo_usuario: ""
+        foto: ""
+       
     })
 
     useEffect(() => {
-        if (token != '') {
+        if (token !== '') {
             dispatch(addToken(token));
             history.push('/feed')
         }
@@ -49,11 +51,21 @@ function Login() {
         })
     }
 
+    useEffect(() => {
+        if (respUserLogin.token !== "") {
+
+            
+            dispatch(addToken(respUserLogin.token))
+            dispatch(addId(respUserLogin.id.toString()))
+            history.push('/feed')
+        }
+    }, [respUserLogin.token])
+
 
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault();
         try {
-            await login(`/usuarios/logar`, userLogin, setToken)
+            await login(`/usuarios/logar`, userLogin, setRespUserLogin)
 
             toast.success('Usuário logado com sucesso!', {
                 position: "top-right",

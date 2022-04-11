@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link, useHistory } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { addToken } from '../../../store/tokens/actions';
-import { TokenState } from '../../../store/tokens/tokensReducer';
+import { UserState } from '../../../store/tokens/UserReducer';
 import './Navbar.css';
 
 
@@ -12,7 +12,7 @@ function Navbar() {
 
     let history = useHistory()
 
-    const token = useSelector<TokenState, TokenState["tokens"]>(
+    const token = useSelector<UserState, UserState["tokens"]>(
         (state) => state.tokens
     );
 
@@ -71,9 +71,7 @@ function Navbar() {
                             </Box>
                         </Link>
                         
-
                        
-
                         <Box mx={1} className='cursor' onClick={goLogout}>
                             <Typography variant="h6" color="inherit" className='titulos'>
                                 Sair

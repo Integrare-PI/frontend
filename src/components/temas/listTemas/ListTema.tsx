@@ -7,12 +7,13 @@ import './ListTema.css';
 import { busca } from '../../../services/Services';
 import { toast } from 'react-toastify';
 import { useSelector } from 'react-redux';
-import { TokenState } from '../../../store/tokens/tokensReducer';
+import { UserState } from '../../../store/tokens/UserReducer';
+
 
 
 function ListaTema() {
     const [temas, setTemas] = useState<Tema[]>([])
-    const token = useSelector<TokenState, TokenState["tokens"]>(
+    const token = useSelector<UserState, UserState["tokens"]>(
         (state) => state.tokens
       );
     let history = useHistory();

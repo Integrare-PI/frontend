@@ -7,7 +7,8 @@ import { buscaId, deleteId } from '../../../services/Services';
 import { TextFormatSharp } from '@material-ui/icons';
 import { toast } from 'react-toastify';
 import { useSelector } from 'react-redux';
-import { TokenState } from '../../../store/tokens/tokensReducer';
+import { UserState } from '../../../store/tokens/UserReducer';
+
 
 
 function DeletarTema() {
@@ -15,7 +16,7 @@ function DeletarTema() {
 
     const {id} = useParams<{id: string}>();
     
-    const token = useSelector<TokenState, TokenState["tokens"]>(
+    const token = useSelector<UserState, UserState["tokens"]>(
         (state) => state.tokens
       );
 

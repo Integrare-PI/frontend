@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { Box, Button } from '@material-ui/core'
 import { useSelector } from 'react-redux'
 import { useHistory, Link } from 'react-router-dom'
-import { TokenState } from '../../store/tokens/tokensReducer'
 import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem' 
 import CadastroTema from '../../components/temas/CadastroTema/CadastroTema'
 
@@ -10,26 +9,28 @@ import User from '../../models/User'
 import { buscaId } from '../../services/Services'
 
 import './Perfil.css'
+import { UserState } from '../../store/tokens/UserReducer'
 
 function Perfil() {
 
     let history = useHistory()
 
-    const id = useSelector<TokenState, TokenState["id"]>(
+    const id = useSelector<UserState, UserState["id"]>(
         (state) => state.id
     );
 
-    const token = useSelector<TokenState, TokenState["tokens"]>(
+    const token = useSelector<UserState, UserState["tokens"]>(
         (state) => state.tokens
     )
 
     const [user, setUser] = useState<User>({
         id: +id,
-        nome_completo: "",
         usuario: "",
+        nome_completo: "",
         senha: "",
-        foto: "",
-        tipo_usuario: ""
+        tipo_usuario: "",
+        foto: ""
+       
     })
 
     useEffect(() => {
@@ -69,11 +70,11 @@ function Perfil() {
                 </Box>
             </Box>
             <Box display="flex" justifyContent="space-between">
-                <Box marginRight={1} className='cadastro'>
+                <Box  className='cadastro'>
                     <ModalPostagem />
                 </Box>
 
-                <Box marginRight={1} className='cadastro'>
+                <Box  className='cadastro'>
                 <Link to="/formularioTema" className='novotema'>
                 <Button variant="outlined" > Novo Tema</Button>
                 </Link>

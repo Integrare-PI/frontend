@@ -8,12 +8,12 @@ import Postagem from '../../../models/Postagem';
 import './ListaPostagem.css';
 import { toast } from 'react-toastify';
 import { useSelector } from 'react-redux';
-import { TokenState } from '../../../store/tokens/tokensReducer';
+import { UserState } from '../../../store/tokens/UserReducer';
 
 function ListaPostagem() {
   const [posts, setPosts] = useState<Postagem[]>([])
 
-  const token = useSelector<TokenState, TokenState["tokens"]>(
+  const token = useSelector<UserState, UserState["tokens"]>(
     (state) => state.tokens
     );
   let history = useHistory();
@@ -68,10 +68,12 @@ function ListaPostagem() {
                 <Typography variant="body2" component="p">
                   {post.tema?.descricao}
                 </Typography>
+                {}
                 <Typography variant="body2" component="p">
                 {post.usuario?.nome_completo}
               </Typography>
               </CardContent>
+
               <CardActions>
                 <Box display="flex" justifyContent="center" mb={1.5}>
 

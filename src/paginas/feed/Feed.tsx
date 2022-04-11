@@ -2,19 +2,18 @@ import React, { useEffect, useState } from 'react'
 import { Box, Card, CardActions, CardContent, Button, Typography, Grid } from '@material-ui/core';
 import { Link, useHistory } from 'react-router-dom'
 import { busca } from '../../services/Services';
-import useLocalStorage from 'react-use-localstorage';
 import Postagem from '../../models/Postagem';
 import './Feed.css';
 import { toast } from 'react-toastify';
 import { useSelector } from 'react-redux';
-import { TokenState } from '../../store/tokens/tokensReducer';
-import User from '../../models/User';
-import Perfil from '../Perfil/Perfil'
+import Perfil from '../Perfil/Perfil';
+import { UserState } from '../../store/tokens/UserReducer';
+
 
 function Feed() {
   const [posts, setPosts] = useState<Postagem[]>([])
 
-  const token = useSelector<TokenState, TokenState["tokens"]>(
+  const token = useSelector<UserState, UserState["tokens"]>(
     (state) => state.tokens
   );
   let history = useHistory();
@@ -54,7 +53,7 @@ function Feed() {
     <>
       <Grid container flex-direction="row" justifyContent="space-around" alignItems="center" className='caixa'>
         
-          <Grid alignItems="flex-start" className='perfilbox' item xs={4}>
+          <Grid alignItems="flex-start">
             <Box paddingLeft={7} m={2}>
             <Perfil />
             </Box>
@@ -89,9 +88,8 @@ function Feed() {
         
       </Grid>
 
-
-
-    </>)
+    </>
+    )
 }
 
 export default Feed;
