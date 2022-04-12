@@ -15,14 +15,14 @@ function ListaPostagem() {
 
   const token = useSelector<UserState, UserState["tokens"]>(
     (state) => state.tokens
-    );
+  );
   let history = useHistory();
 
   useEffect(() => {
     if (token == "") {
       toast.error('Você precisa estar logado!', {
         position: "top-right",
-        autoClose:2000,
+        autoClose: 2000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: false,
@@ -30,7 +30,7 @@ function ListaPostagem() {
         theme: "colored",
         progress: undefined,
 
-    })
+      })
       history.push("/login")
 
     }
@@ -51,9 +51,13 @@ function ListaPostagem() {
   }, [posts.length])
   return (
     <>
+            <Typography variant='h3' component='h3' align='center' className='gambs'>
+              ...
+            </Typography>
       {
         posts.map(post => (
           <Box m={2} >
+
             <Card variant="outlined" className='cards'>
               <CardContent>
                 <Typography color="textSecondary" gutterBottom>
@@ -72,8 +76,8 @@ function ListaPostagem() {
                   {post.tema?.descricao}
                 </Typography>
                 <Typography variant="body2" component="p">
-                {post.usuario?.nome_completo}
-              </Typography>
+                  {post.usuario?.nome_completo}
+                </Typography>
               </CardContent>
 
               <CardActions>
@@ -88,7 +92,7 @@ function ListaPostagem() {
                   </Link>
                   <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
                     <Box mx={1}>
-                      <Button variant="contained"  size='small' color="secondary" className='botao2'>
+                      <Button variant="contained" size='small' color="secondary" className='botao2'>
                         deletar
                       </Button>
                     </Box>
@@ -99,6 +103,9 @@ function ListaPostagem() {
           </Box>
         ))
       }
+      <Typography variant='h3' component='h3' align='center' className='gambs'>
+        ...
+      </Typography>
     </>)
 }
 

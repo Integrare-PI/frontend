@@ -10,6 +10,12 @@ function Home() {
         <>
             <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa, fundo'>
                 <Grid alignItems="center" item xs={5} className='caixa1'>
+                    <Typography variant='h3' component='h3' align='center' className='gambs'>
+                        ...
+                    </Typography>
+                    <Typography variant='h3' component='h3' align='center' className='gambs'>
+                        ...
+                    </Typography>
                     <Box paddingX={20} >
                         <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>Bem vinde!</Typography>
                         <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'>A Integrare ajuda você a se conectar e compartilhar com educadores especializados!</Typography>
@@ -27,13 +33,18 @@ function Home() {
 
                 <Grid item xs={8}>
                     <Box paddingLeft={7} >
-                        <img src="https://i.ibb.co/z6tNGYK/pngwing-com-7.png" alt="crianças" className='imagemhome2' />
+                        <img src=""  className='imagemhome2' />
                     </Box>
                 </Grid>
                 <Grid item xs={4} className="caixa">
                     <Box paddingRight={8}>
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="right" style={{ color: "#424242", fontWeight: "bold" }}>NÓS ACREDITAMOS NA EDUCAÇÃO INCLUSIVA E EQUITATIVA DE QUALIDADE.</Typography>
-
+                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="right" style={{ color: "#424242", fontWeight: "bold" }}>NÓS ACREDITAMOS NA EDUCAÇÃO INCLUSIVA E EQUITATIVA DE QUALIDADE</Typography>
+                        <Typography variant='h3' component='h3' align='center' className='gambs'>
+                            ...
+                        </Typography>
+                        <Typography variant='h3' component='h3' align='center' className='gambs'>
+                            ...
+                        </Typography>
                     </Box>
                 </Grid>
             </Grid>

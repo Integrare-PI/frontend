@@ -51,45 +51,49 @@ function Feed() {
   }, [posts.length])
   return (
     <>
+      <Typography variant='h3' component='h3' align='center' className='gambs'>
+        ...
+      </Typography>
       <Grid container flex-direction="row" justifyContent="space-around" alignItems="center" className='caixa'>
-        
-          <Grid alignItems="flex-start">
-            <Box paddingLeft={7} m={2}>
+
+        <Grid alignItems="flex-start">
+          <Box paddingLeft={7} m={2}>
             <Perfil />
-            </Box>
-          </Grid>
+          </Box>
+        </Grid>
 
-          <Grid alignItems="flex-start" item xs={8} >
-            <Box className='box' paddingRight={7}>
-              {
-                posts.map(post => (
-                  <Box m={2} >
-                    <Card variant="outlined" className='cards'>
-                      <CardContent>
-                        <Typography color="textSecondary" gutterBottom>
-                          Postagens
-                        </Typography>
-                        <Typography variant="h5" component="h2">
-                          {post.assunto}
-                        </Typography>
-                        <Typography variant="body2" component="p">
-                          {post.texto_descricao}
-                        </Typography>
-                        <Typography variant="body2" component="p">
-                          {post.tema?.descricao}
-                        </Typography>
-                      </CardContent>
-                    </Card>
-                  </Box>
-                ))
-              }
-            </Box>
-          </Grid>
-        
+        <Grid alignItems="flex-start" item xs={8} >
+          <Box className='box' paddingRight={7}>
+            {
+              posts.map(post => (
+                <Box m={2} >
+                  <Card variant="outlined" className='cards'>
+                    <CardContent>
+                      <Typography color="textSecondary" gutterBottom>
+                        Postagens
+                      </Typography>
+                      <Typography variant="h5" component="h2">
+                        {post.assunto}
+                      </Typography>
+                      <Typography variant="body2" component="p">
+                        {post.texto_descricao}
+                      </Typography>
+                      <Typography variant="body2" component="p">
+                        {post.tema?.descricao}
+                      </Typography>
+                    </CardContent>
+                  </Card>
+                </Box>
+              ))
+            }
+          </Box>
+        </Grid>
       </Grid>
-
+      <Typography variant='h3' component='h3' align='center' className='gambs'>
+          ...
+        </Typography>
     </>
-    )
+  )
 }
 
 export default Feed;

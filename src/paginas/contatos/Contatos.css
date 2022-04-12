@@ -6,9 +6,15 @@
   font-size: 65px!important;
 }
 
+.gambs{
+  color: #e3cce100;
+}
+
 .box-fotos{
-  height: 400px !important;
-  width: 400px !important;
+  height: 300px !important;
+  width: 250px !important;
+  margin-left: 10px;
+  border-radius: 30px;
 }
 
 .icones{

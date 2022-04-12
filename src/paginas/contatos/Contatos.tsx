@@ -12,8 +12,14 @@ function Contatos() {
                 <Grid xs={12}  >
                     <Grid container justifyContent="center">
                         <Grid item xs={6}>
+                            <Typography variant='h3' component='h3' align='center' className='gambs'>
+                                ...
+                            </Typography>
+                            <Typography variant='h3' component='h3' align='center' className='gambs'>
+                                ...
+                            </Typography>
                             <Box >
-                                <img src="https://integrareterapias.com.br/wp-content/uploads/2021/02/cropped-logotipo-integrare-fundo-transparente.png" alt="logo integrare" style={{ width: "1000px", height: "600px" }} />
+                                <img src="https://i.ibb.co/YftYjj0/Integrare-1.png" alt="logo integrare" style={{ width: "800px", height: "400px" }} />
                             </Box>
                         </Grid>
                     </Grid>
@@ -87,7 +93,7 @@ function Contatos() {
                 <Grid container xs={12} justifyContent='center' alignItems='center' >
                     <Box justifyContent="center" alignItems="center">
                         <Box justifyContent="center" alignItems="center" >
-                            <img className='box-fotos' src="https://imgur.com/xdf8Cv6.png" alt="Bruno Requena" />
+                            <img className='box-fotos' src="https://i.ibb.co/h937w0b/euzinho-1.png" alt="Bruno Requena" />
                         </Box>
                         <Box >
                             <Typography variant='h5' component='h5' align='center'>
@@ -95,9 +101,6 @@ function Contatos() {
                             </Typography>
                             <Typography variant='h6' component='h6' align='center'>
                                 Desenvolvedor Full Stack
-                            </Typography>
-                            <Typography variant='h6' component='h6' align='center'>
-                                xxxxxx
                             </Typography>
                         </Box>
                         <Box alignItems="center" justifyContent="center" className='box-icones' >
@@ -112,7 +115,7 @@ function Contatos() {
                     </Box>
                     <Box>
                         <Box justifyContent="center" alignItems="center">
-                            <img className='box-fotos' src="https://imgur.com/55nGGhb.png" alt="Gustavo Rodrigues" />
+                            <img className='box-fotos' src="https://i.ibb.co/K9VCt6f/gustavo-1.png" alt="Gustavo Rodrigues" />
                         </Box>
 
                         <Box >
@@ -121,9 +124,6 @@ function Contatos() {
                             </Typography>
                             <Typography variant='h6' component='h6' align='center'>
                                 Desenvolvedor Full Stack
-                            </Typography>
-                            <Typography variant='h6' component='h6' align='center'>
-                                xxxxxx
                             </Typography>
                         </Box>
 
@@ -139,7 +139,7 @@ function Contatos() {
                     </Box>
                     <Box>
                         <Box>
-                            <img className='box-fotos' src="https://imgur.com/99lEzdO.png" alt="Joyce Lopes" />
+                            <img className='box-fotos' src="https://i.ibb.co/rv5s111/joyce-1.png" alt="Joyce Lopes" />
                         </Box>
 
                         <Box >
@@ -148,9 +148,6 @@ function Contatos() {
                             </Typography>
                             <Typography variant='h6' component='h6' align='center'>
                                 Desenvolvedora Full Stack
-                            </Typography>
-                            <Typography variant='h6' component='h6' align='center'>
-                                xxxxxx
                             </Typography>
                         </Box>
 
@@ -167,7 +164,7 @@ function Contatos() {
 
                     <Box>
                         <Box>
-                            <img className='box-fotos' src="https://imgur.com/vYg5fSA.jpg" alt="Laura Barros" />
+                            <img className='box-fotos' src="https://i.ibb.co/TW4RnB4/laura-1.png" alt="Laura Barros" />
                         </Box>
 
                         <Box >
@@ -176,9 +173,6 @@ function Contatos() {
                             </Typography>
                             <Typography variant='h6' component='h6' align='center'>
                                 Desenvolvedora Full Stack
-                            </Typography>
-                            <Typography variant='h6' component='h6' align='center'>
-                                xxxxxx
                             </Typography>
                         </Box>
 
@@ -194,7 +188,7 @@ function Contatos() {
                     </Box>
                     <Box>
                         <Box>
-                            <img className='box-fotos' src="https://i.imgur.com/SX7yHHW.png" alt="Lucas Rodrigues" />
+                            <img className='box-fotos' src="https://i.ibb.co/jRZ1d2k/lucas-1.png" alt="Lucas Rodrigues" />
                         </Box>
 
                         <Box >
@@ -203,9 +197,6 @@ function Contatos() {
                             </Typography>
                             <Typography variant='h6' component='h6' align='center'>
                                 Desenvolvedor Full Stack
-                            </Typography>
-                            <Typography variant='h6' component='h6' align='center'>
-                                xxxxxx
                             </Typography>
                         </Box>
 
@@ -221,7 +212,7 @@ function Contatos() {
                     </Box>
                     <Box>
                         <Box>
-                            <img className='box-fotos' src="https://imgur.com/RjIAt9b.png" alt="Rebecca Cruz" />
+                            <img className='box-fotos' src="https://i.ibb.co/1RbKbk1/rebecca-1.png" alt="Rebecca Cruz" />
                         </Box>
 
                         <Box >
@@ -231,9 +222,7 @@ function Contatos() {
                             <Typography variant='h6' component='h6' align='center'>
                                 Desenvolvedora Full Stack
                             </Typography>
-                            <Typography variant='h6' component='h6' align='center'>
-                                xxxxxx
-                            </Typography>
+
                         </Box>
 
                         <Box display="flex" alignItems="center" justifyContent="center" className='box-icones'>
@@ -248,7 +237,7 @@ function Contatos() {
                     </Box>
                     <Box>
                         <Box>
-                            <img className='box-fotos' src="https://imgur.com/IRza1pd.png" alt="Willian Menezes" />
+                            <img className='box-fotos' src="https://i.ibb.co/9VRpp7Z/will-1.png" alt="Willian Menezes" />
                         </Box>
 
                         <Box >
@@ -257,9 +246,6 @@ function Contatos() {
                             </Typography>
                             <Typography variant='h6' component='h6' align='center'>
                                 Desenvolvedor Full Stack
-                            </Typography>
-                            <Typography variant='h6' component='h6' align='center'>
-                                xxxxxx
                             </Typography>
                         </Box>
 
@@ -273,10 +259,13 @@ function Contatos() {
                             </a>
                         </Box>
                     </Box>
-
-
-
                 </Grid>
+                <Typography variant='h3' component='h3' align='center' className='gambs'>
+                    ...
+                </Typography>
+                <Typography variant='h3' component='h3' align='center' className='gambs'>
+                    ...
+                </Typography>
             </Grid>
         </>
     );
