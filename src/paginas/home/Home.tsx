@@ -33,7 +33,7 @@ function Home() {
 
                 <Grid item xs={8}>
                     <Box paddingLeft={7} >
-                        <img src=""  className='imagemhome2' />
+                        <img src="" className='imagemhome2' />
                     </Box>
                 </Grid>
                 <Grid item xs={4} className="caixa">
@@ -43,7 +43,7 @@ function Home() {
                             ...
                         </Typography>
                         <Typography variant='h3' component='h3' align='center' className='gambs'>
-                            ...
+                            g...
                         </Typography>
                     </Box>
                 </Grid>
