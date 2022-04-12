@@ -1,6 +1,10 @@
 .caixa{
-background: url(https://i.ibb.co/k6ZN4k2/fundo-home.png) !important;
-background-size: cover !important;
+    background-color: #ffffff00;
+}
+
+.titulo{
+   color: rgb(0, 0, 0) !important;
+   font-weight: bold !important;
 }
 
 .botao{
@@ -9,32 +13,38 @@ background-size: cover !important;
     color: black !important;
 }
 
+.postagens{
+    background-color: white;
+}
+
+
+.imagemhome{
+    background-image: url(https://i.ibb.co/GFbYc1B/pngwing-com-5.png);
+    background-repeat: no-repeat !important;
+    width: 80vh !important;
+    min-height: 80vh !important;
+    background-position: center;
+}
+
+.imagemhome2{
+    background-repeat: no-repeat !important;
+    width: 50vh !important;
+    min-height: 50vh !important;
+    background-position: center;
+}
+
 .caixa1{
-position: absolute;
-width: 520px;
-height: 579px;
-left: 849px;
-top: 0px;
     padding-bottom: 250px;
 }
 
-.caixa2{
-position: absolute;
-width: 300px;
-height: 300px;
-left: 0px;
-top: 100px;
-
-background: #D76DF1;
-box-shadow: 2.88667px 5.77333px 7.21667px rgba(0, 0, 0, 0.6);
-border-radius: 14.4333px;
+body{
+    background-color: #8d2e873e;
 }
 
-.grid2{
-position: relative;
+.fundo{
+    position: absolute !important;
 
-
-
-
-
+    background: url(https://i.ibb.co/k6ZN4k2/fundo-home.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
 }
