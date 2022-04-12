@@ -65,7 +65,7 @@ function CadastroPost() {
 
     useEffect(() => {
         getTemas()
-        if (id !== '') { // posivell
+        if (id !== undefined) {
             findByIdPostagem(id)
         }
     }, [id])
