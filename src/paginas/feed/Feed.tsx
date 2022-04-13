@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react'
-import { Box, Card, CardActions, CardContent, Button, Typography, Grid } from '@material-ui/core';
+import { Box, Card, CardActions, CardContent, Button, Typography, Grid, IconButton } from '@material-ui/core';
 import { Link, useHistory } from 'react-router-dom'
-import { busca } from '../../services/Services';
+import { busca, put } from '../../services/Services';
 import Postagem from '../../models/Postagem';
 import './Feed.css';
 import { toast } from 'react-toastify';
 import { useSelector } from 'react-redux';
 import Perfil from '../Perfil/Perfil';
 import { UserState } from '../../store/tokens/UserReducer';
-
+import FavoriteIcon from '@material-ui/icons/Favorite';
 
 function Feed() {
   const [posts, setPosts] = useState<Postagem[]>([])
@@ -17,6 +17,18 @@ function Feed() {
     (state) => state.tokens
   );
   let history = useHistory();
+  const [postagem, setPostagem] = useState<Postagem>({
+    id: 0,
+    assunto: '',
+    texto_descricao: '',
+    anexo: '',
+    video: '',
+    resposta: '',
+    curtidas: 0,
+    data: '',
+    tema: null,
+    usuario: null
+  })
 
   useEffect(() => {
     if (token == "") {
@@ -44,6 +56,17 @@ function Feed() {
     })
   }
 
+  async function curtidas(id: number) {
+    await put(`/postagens/curtir/${id}`, postagem, setPostagem, {
+      headers: {
+        'Authorization': token
+      }
+    }
+    );
+    getPost()
+  }
+
+
   useEffect(() => {
 
     getPost()
@@ -54,9 +77,9 @@ function Feed() {
       <Typography variant='h3' component='h3' align='center' className='gambs'>
         ...
       </Typography>
-      <Grid container flex-direction="row" justifyContent="space-around" alignItems="center" className='caixa'>
+      <Grid container spacing={2}>
 
-        <Grid alignItems="flex-start">
+        <Grid item xs={4} className='boxuser' alignItems="flex-start">
           <Box paddingLeft={7} m={2}>
             <Perfil />
           </Box>
@@ -72,14 +95,38 @@ function Feed() {
                       <Typography color="textSecondary" gutterBottom>
                         Postagens
                       </Typography>
+                      <Typography variant="body2" component="p">
+                        {post.usuario?.nome_completo}
+                        <br />
+                        {post.usuario?.tipo_usuario}
+                      </Typography>
                       <Typography variant="h5" component="h2">
                         {post.assunto}
+                      </Typography>
+                      <Typography variant="body2" component="p">
+                        {post.tema?.descricao}
                       </Typography>
                       <Typography variant="body2" component="p">
                         {post.texto_descricao}
                       </Typography>
                       <Typography variant="body2" component="p">
-                        {post.tema?.descricao}
+                        <img src={post.anexo} alt="" className='anexo' />
+                      </Typography>
+                      <Typography variant="body2" component="p">
+                        {post.video}
+                      </Typography>
+
+                      <IconButton aria-label="add to favorites" onClick={() => { curtidas(post.id) }} >
+                        <FavoriteIcon />
+                        <Typography variant="body2" component="p">
+                          {post.curtidas}
+                        </Typography>
+                      </IconButton>
+                      <Typography color="textSecondary" gutterBottom>
+                        Resposta:
+                      </Typography>
+                      <Typography variant="body2" component="p" className='reposta'>
+                        {post.resposta}
                       </Typography>
                     </CardContent>
                   </Card>
@@ -87,11 +134,12 @@ function Feed() {
               ))
             }
           </Box>
+
         </Grid>
-      </Grid>
-      <Typography variant='h3' component='h3' align='center' className='gambs'>
+        <Typography variant='h3' component='h3' align='center' className='gambs'>
           ...
         </Typography>
+      </Grid>
     </>
   )
 }

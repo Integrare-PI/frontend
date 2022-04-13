@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { Box, Button } from '@material-ui/core'
+import { Box, Button, Grid, Typography } from '@material-ui/core'
 import { useSelector } from 'react-redux'
 import { useHistory, Link } from 'react-router-dom'
-import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem' 
+import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem'
 import CadastroTema from '../../components/temas/CadastroTema/CadastroTema'
 
 import User from '../../models/User'
@@ -30,7 +30,7 @@ function Perfil() {
         senha: "",
         tipo_usuario: "",
         foto: ""
-       
+
     })
 
     useEffect(() => {
@@ -55,34 +55,41 @@ function Perfil() {
     }, [id])
 
     return (
+
         <Box className='card-principal'>
-            <Box className='card-container-imagem'>
-                <img className='card-imagem'
-                    src={user.foto}
-                    alt={user.nome_completo} />
-            </Box>
-
-            <Box className='card-container-info'>
-                <Box>
-                    <h1>{user.nome_completo}</h1>
-                    <hr />
-                    <h1>{user.tipo_usuario}</h1>
-                </Box>
-            </Box>
-            <Box display="flex" justifyContent="space-between">
-                <Box  className='cadastro'>
-                    <ModalPostagem />
+            <Box>
+                <Box className='card-container-imagem'>
+                    <img className='card-imagem'
+                        src={user.foto}
+                        alt={user.nome_completo} />
                 </Box>
 
-                <Box  className='cadastro'>
-                <Link to="/formularioTema" className='novotema'>
-                <Button variant="outlined" > Novo Tema</Button>
-                </Link>
-                    
+                <Box className='card-container-info'>
+                    <Box>
+                        <h1>{user.nome_completo}</h1>
+                        <hr />
+                        <h1>{user.tipo_usuario}</h1>
+                    </Box>
                 </Box>
             </Box>
 
+            <Box>
+                <Box display="flex" justifyContent="center" className='cadastro2'>
+                    <Box className='cadastro'>
 
+                        <Link to="/formularioPostagem" className='novapostagem'>
+                            <Button variant="outlined" className='botao3'> Nova Postagem</Button>
+                        </Link>
+                    </Box>
+
+                    <Box className='cadastro'>
+                        <Link to="/formularioTema" className='novotema'>
+                            <Button variant="outlined" className='botao3'> Novo Tema</Button>
+                        </Link>
+
+                    </Box>
+                </Box>
+            </Box>
         </Box>
     )
 }

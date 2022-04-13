@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { Box, Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
+import { Box, Card, CardActions, CardContent, Button, Typography, IconButton } from '@material-ui/core';
 import { Link, useHistory } from 'react-router-dom'
-import { busca } from '../../../services/Services';
+import { busca, buscaId, put } from '../../../services/Services';
 import useLocalStorage from 'react-use-localstorage';
 import Postagem from '../../../models/Postagem';
-
+import FavoriteIcon from '@material-ui/icons/Favorite';
 import './ListaPostagem.css';
 import { toast } from 'react-toastify';
 import { useSelector } from 'react-redux';
@@ -12,11 +12,22 @@ import { UserState } from '../../../store/tokens/UserReducer';
 
 function ListaPostagem() {
   const [posts, setPosts] = useState<Postagem[]>([])
-
   const token = useSelector<UserState, UserState["tokens"]>(
     (state) => state.tokens
   );
   let history = useHistory();
+  const [postagem, setPostagem] = useState<Postagem>({
+    id: 0,
+    assunto: '',
+    texto_descricao: '',
+    anexo: '',
+    video: '',
+    resposta: '',
+    curtidas: 0,
+    data: '',
+    tema: null,
+    usuario: null
+  })
 
   useEffect(() => {
     if (token == "") {
@@ -67,17 +78,21 @@ function ListaPostagem() {
                   {post.assunto}
                 </Typography>
                 <Typography variant="body2" component="p">
+                  {post.tema?.descricao}
+                </Typography>
+                <Typography variant="body2" component="p">
                   {post.texto_descricao}
                 </Typography>
                 <Typography variant="body2" component="p">
-                  {post.anexo}
+                  {post.video}
                 </Typography>
                 <Typography variant="body2" component="p">
-                  {post.tema?.descricao}
+                <img src={post.anexo} alt="" className='anexo'/>
                 </Typography>
                 <Typography variant="body2" component="p">
                   {post.usuario?.nome_completo}
                 </Typography>
+
               </CardContent>
 
               <CardActions>
@@ -86,7 +101,14 @@ function ListaPostagem() {
                   <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
                     <Box mx={1}>
                       <Button variant="contained" size='small' color="primary" className='botao'>
-                        atualizar
+                        Responder
+                      </Button>
+                    </Box>
+                  </Link>
+                  <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
+                    <Box mx={1}>
+                      <Button variant="contained" size='small' color="primary" className='botao3'>
+                        Editar
                       </Button>
                     </Box>
                   </Link>
@@ -98,8 +120,13 @@ function ListaPostagem() {
                     </Box>
                   </Link>
                 </Box>
+                
               </CardActions>
+              <Typography variant="body2" component="p" className='reposta'>
+                  {post.resposta}
+                </Typography>
             </Card>
+            
           </Box>
         ))
       }

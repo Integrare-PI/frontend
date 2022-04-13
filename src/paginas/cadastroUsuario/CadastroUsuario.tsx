@@ -2,10 +2,12 @@ import React, { useState, useEffect, ChangeEvent } from 'react';
 import { useHistory, Link } from 'react-router-dom';
 import User from '../../models/User';
 import { cadastroUsuario } from '../../services/Services';
-import { Grid, Box, Typography, Button, TextField } from '@material-ui/core';
+import { Grid, Box, Typography, Button, TextField, RadioGroup, FormLabel, Radio } from '@material-ui/core';
 import './CadastroUsuario.css';
 import { toast } from 'react-toastify';
-
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormControl from '@material-ui/core/FormControl';
+import Select, { SelectChangeEvent } from '@mui/material/Select';
 
 function CadastroUsuario() {
 
@@ -57,46 +59,46 @@ function CadastroUsuario() {
                 await cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult)
                 toast.success('Usuário cadastrado com sucesso!', {
                     position: "top-right",
-                    autoClose:2000,
+                    autoClose: 2000,
                     hideProgressBar: false,
                     closeOnClick: true,
                     pauseOnHover: false,
                     draggable: false,
                     theme: "colored",
                     progress: undefined,
-          
+
                 })
 
             } catch (error) {
                 console.log(`Error: ${error}`)
-                
+
                 toast.error('Usuário já existente!', {
                     position: "top-right",
-                    autoClose:2000,
+                    autoClose: 2000,
                     hideProgressBar: false,
                     closeOnClick: true,
                     pauseOnHover: false,
                     draggable: false,
                     theme: "colored",
                     progress: undefined,
-          
+
                 })
             }
         } else {
             toast.error('Dados inconsistentes. Favor verificar as informações de cadastro!', {
                 position: "top-right",
-                autoClose:2000,
+                autoClose: 2000,
                 hideProgressBar: false,
                 closeOnClick: true,
                 pauseOnHover: false,
                 draggable: false,
                 theme: "colored",
                 progress: undefined,
-      
+
             })
 
             setUser({ ...user, senha: "" })
-            setConfirmarSenha("")           
+            setConfirmarSenha("")
         }
     }
 
@@ -180,6 +182,12 @@ function CadastroUsuario() {
                         </Box>
                     </form>
                 </Box>
+                <Typography variant='h3' component='h3' align='center' className='gambs'>
+                    ...
+                </Typography>
+                <Typography variant='h3' component='h3' align='center' className='gambs'>
+                    ...
+                </Typography>
             </Grid>
 
 

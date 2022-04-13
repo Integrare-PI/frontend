@@ -14,3 +14,13 @@
 .cards{
     background: #ffffffaf!important;
 }
+
+.anexo{
+    width: 200px;
+    height: 250px;
+}
+
+.resposta{
+    color: blue!important;
+    margin-left: 10px;
+}

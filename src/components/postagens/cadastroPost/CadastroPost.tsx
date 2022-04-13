@@ -1,7 +1,7 @@
 import React, { ChangeEvent, useEffect, useState } from 'react'
 import { Container, Typography, TextField, Button, Select, InputLabel, MenuItem, FormControl, FormHelperText } from "@material-ui/core"
 import './CadastroPost.css';
-import { useHistory, useParams } from 'react-router-dom';
+import { useHistory, useParams, Link } from 'react-router-dom';
 import Tema from '../../../models/Tema';
 import Postagem from '../../../models/Postagem';
 import { busca, buscaId, post, put } from '../../../services/Services';
@@ -33,6 +33,9 @@ function CadastroPost() {
         assunto: '',
         texto_descricao: '',
         anexo: "",
+        video: "",
+        resposta: "",
+        curtidas: 0,
         data: "",
         tema: null,
         usuario: null
@@ -146,6 +149,12 @@ function CadastroPost() {
 
     return (
         <Container maxWidth="sm" className="topo">
+            <Typography variant='h3' component='h3' align='center' className='gambs'>
+                ...
+            </Typography>
+            <Typography variant='h3' component='h3' align='center' className='gambs'>
+                ...
+            </Typography>
             <form onSubmit={onSubmit} className='formulario'>
                 <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro postagem</Typography>
 
@@ -171,8 +180,24 @@ function CadastroPost() {
                     margin="normal" fullWidth
                 />
 
-                <FormControl>
-                    <InputLabel id="demo-simple-select-helper-label">Tema </InputLabel>
+                <TextField
+                    value={postagem.video}
+                    onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)}
+                    id="video" label="video" name="video" variant="outlined"
+                    margin="normal" fullWidth
+                />
+
+                <TextField
+                    value={postagem.resposta}
+                    onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)}
+                    id="resposta" label="resposta" name="resposta" variant="outlined"
+                    margin="normal"
+                    className='resposta'
+                    fullWidth
+                />
+
+                <FormControl className='form-tipo'>
+                    <InputLabel id="demo-simple-select-helper-label" >Tema </InputLabel>
 
                     <Select
                         labelId="demo-simple-select-helper-label"
