@@ -1,5 +1,5 @@
 import { AppBar, Box, Button, Toolbar, Typography } from '@material-ui/core';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useHistory } from 'react-router-dom';
 import { toast } from 'react-toastify';
@@ -7,6 +7,7 @@ import { addToken } from '../../../store/tokens/actions';
 import { UserState } from '../../../store/tokens/UserReducer';
 import './Navbar.css';
 import User from '../../../models/User'
+import { buscaId } from '../../../services/Services'
 
 function Navbar() {
 
@@ -20,20 +21,24 @@ function Navbar() {
         (state) => state.id
     );
 
-    const tipo = useSelector<UserState, UserState["tipo_usuario"]>(
-        (state) => state.tipo_usuario
-    );
-
-    const dispatch = useDispatch();
-
     const [user, setUser] = useState<User>({
         id: +id,
         usuario: "",
         nome_completo: "",
         senha: "",
-        tipo_usuario: "Prof",
-        foto: ""
+        tipo_usuario: "",
+        foto: "",
     })
+
+    async function findById(id: string) {
+        buscaId(`/usuarios/${id}`, setUser, {
+            headers: {
+                'Authorization': token
+            }
+        })
+    }
+    
+    const dispatch = useDispatch();
 
     function goLogout() {
 
@@ -51,6 +56,12 @@ function Navbar() {
         })
         history.push("/login")
     }
+
+    useEffect(() => {
+        if (id !== undefined) {
+            findById(id)
+        }
+    }, [id])
 
     var navbarComponent;
 
