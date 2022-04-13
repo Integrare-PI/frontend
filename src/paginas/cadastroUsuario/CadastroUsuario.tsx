@@ -160,15 +160,16 @@ function CadastroUsuario() {
                             placeholder='a senha deve conter no mínimo 8 caracteres'
                             fullWidth required />
 
-                        <TextField
-                            value={user.tipo_usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            id='tipo_usuario'
-                            label='tipo_usuario'
-                            variant='outlined'
-                            name='tipo_usuario'
-                            margin='normal'
-                            placeholder='aluno ou professor'
-                            fullWidth required />
+                        <FormControl className='form-tipo'>
+                            <FormLabel id="demo-radio-buttons-group-label">perfil</FormLabel>
+                            <RadioGroup
+                                aria-labelledby="demo-radio-buttons-group-label" defaultValue="tipo_usuario"
+                                name="tipo_usuario"
+                                onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}>
+                                <FormControlLabel value="Alune" control={<Radio />} label="Alune" />
+                                <FormControlLabel value="Prof" control={<Radio />} label="Professore" />
+                            </RadioGroup>
+                        </FormControl>
 
                         <Box marginTop={2} textAlign='center'>
                             <Link to='/home' className='text-decorator-none'>
