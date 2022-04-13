@@ -8,7 +8,7 @@ import './Footer.css';
 function Footer(){
     return (
         <>
-            <Grid container direction="row" className='fixar' style={{ display: "flex", justifyContent: "space-between"}}>
+            <Grid container direction="row" className='fixar' style={{ display: "static", justifyContent: "space-between"}}>
                     <Box>
                         <a target="_blank" className='text-decorator-none2' href="https://brasil.generation.org">
                             <Typography variant="subtitle2" gutterBottom style={{ color: "black" }} >© 2022 Copyright: brasil.generation.org</Typography>

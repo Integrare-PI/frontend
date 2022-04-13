@@ -4,7 +4,7 @@ import { Link, useHistory } from 'react-router-dom';
 import { login } from '../../services/Services';
 import UserLogin from '../../models/UserLogin';
 import './Login.css';
-import { addToken, addId } from '../../store/tokens/actions';
+import { addToken, addId, addTipo } from '../../store/tokens/actions';
 import { useDispatch } from 'react-redux';
 import { toast } from 'react-toastify';
 
@@ -53,10 +53,9 @@ function Login() {
 
     useEffect(() => {
         if (respUserLogin.token !== "") {
-
-            
             dispatch(addToken(respUserLogin.token))
             dispatch(addId(respUserLogin.id.toString()))
+            dispatch(addTipo(respUserLogin.tipo_usuario))
             history.push('/feed')
         }
     }, [respUserLogin.token])

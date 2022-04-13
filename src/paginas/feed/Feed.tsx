@@ -109,25 +109,26 @@ function Feed() {
                       <Typography variant="body2" component="p">
                         {post.texto_descricao}
                       </Typography>
-                      <Typography variant="body2" component="p">
-                        <img src={post.anexo} alt="" className='anexo' />
-                      </Typography>
-                      <Typography variant="body2" component="p">
-                        {post.video}
-                      </Typography>
-
-                      <IconButton aria-label="add to favorites" onClick={() => { curtidas(post.id) }} >
-                        <FavoriteIcon />
-                        <Typography variant="body2" component="p">
-                          {post.curtidas}
-                        </Typography>
-                      </IconButton>
+                      <hr></hr>
                       <Typography color="textSecondary" gutterBottom>
                         Resposta:
                       </Typography>
                       <Typography variant="body2" component="p" className='reposta'>
                         {post.resposta}
                       </Typography>
+                      <Typography variant="body2" component="p">
+                        {post.video}
+                      </Typography>
+                      <Typography variant="body2" component="p">
+                        <img src={post.anexo} alt="" className='anexo' />
+                      </Typography>
+                      <IconButton aria-label="add to favorites" onClick={() => { curtidas(post.id) }} >
+                        <FavoriteIcon />
+                        <Typography variant="body2" component="p">
+                          {post.curtidas}
+                        </Typography>
+                      </IconButton>
+
                     </CardContent>
                   </Card>
                 </Box>

@@ -10,8 +10,8 @@ export const addId = (id: string): Action =>({
     payload: id 
 })
 
-export const addTipo = (tipo:string): Action =>({
+export const addTipo = (tipo_usuario:string): Action =>({
     type:"ADD_TIPO",
-    payload: tipo
+    payload: tipo_usuario
     
 })
