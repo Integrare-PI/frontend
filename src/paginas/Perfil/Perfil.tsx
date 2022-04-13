@@ -29,7 +29,7 @@ function Perfil() {
         nome_completo: "",
         senha: "",
         tipo_usuario: "",
-        foto: ""
+        foto: "" 
 
     })
 

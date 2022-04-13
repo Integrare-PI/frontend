@@ -80,7 +80,7 @@ function Feed() {
       <Grid container spacing={2}>
 
         <Grid item xs={4} className='boxuser' alignItems="flex-start">
-          <Box paddingLeft={7} m={2}>
+          <Box paddingLeft={2} m={2}>
             <Perfil />
           </Box>
         </Grid>
@@ -113,15 +113,21 @@ function Feed() {
                       <Typography color="textSecondary" gutterBottom>
                         Resposta:
                       </Typography>
+
                       <Typography variant="body2" component="p" className='reposta'>
                         {post.resposta}
                       </Typography>
-                      <Typography variant="body2" component="p">
-                        {post.video}
-                      </Typography>
+.
+                      <a target="_blank" href={post.video}>
+                        <Typography variant="body2" component="p">
+                          {post.video}
+                        </Typography>
+                      </a>
+.              
                       <Typography variant="body2" component="p">
                         <img src={post.anexo} alt="" className='anexo' />
                       </Typography>
+
                       <IconButton aria-label="add to favorites" onClick={() => { curtidas(post.id) }} >
                         <FavoriteIcon />
                         <Typography variant="body2" component="p">

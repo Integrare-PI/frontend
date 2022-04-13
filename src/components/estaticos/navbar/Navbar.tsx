@@ -16,14 +16,22 @@ function Navbar() {
         (state) => state.tokens
     );
 
+    const id = useSelector<UserState, UserState["id"]>(
+        (state) => state.id
+    );
+
+    const tipo = useSelector<UserState, UserState["tipo_usuario"]>(
+        (state) => state.tipo_usuario
+    );
+
     const dispatch = useDispatch();
 
     const [user, setUser] = useState<User>({
-        id: 0,
+        id: +id,
         usuario: "",
         nome_completo: "",
         senha: "",
-        tipo_usuario: "",
+        tipo_usuario: "Prof",
         foto: ""
     })
 
@@ -45,19 +53,6 @@ function Navbar() {
     }
 
     var navbarComponent;
-
-
-    /*
-        if(token !== ""){
-            if(user == "P"){
-
-            }else{
-                //navbar do alune
-            }
-        }else{
-            //navbar deslogado
-        }
-    */
 
     if (token !== "") {
         if (user.tipo_usuario == "Prof") {
