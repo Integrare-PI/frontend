@@ -183,12 +183,8 @@ function CadastroUsuario() {
                         </Box>
                     </form>
                 </Box>
-                <Typography variant='h3' component='h3' align='center' className='gambs'>
-                    ...
-                </Typography>
-                <Typography variant='h3' component='h3' align='center' className='gambs'>
-                    ...
-                </Typography>
+                
+                
             </Grid>
 
 

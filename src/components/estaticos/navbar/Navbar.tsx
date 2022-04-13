@@ -40,7 +40,7 @@ function Navbar() {
 
     if (token !== "") {
         navbarComponent =
-            <AppBar  className='barra'>
+            <AppBar position="static" className='barra'>
                 <Toolbar variant="dense">
                     
 
