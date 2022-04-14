@@ -100,7 +100,7 @@ function ListaPostagem() {
 
                   <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
                     <Box mx={1}>
-                      <Button variant="contained" size='small' color="primary" className='botao'>
+                      <Button variant="contained" size='small' color="primary" className='botao1'>
                         Responder
                       </Button>
                     </Box>

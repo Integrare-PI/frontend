@@ -8,46 +8,28 @@ function Home() {
 
     return (
         <>
-            <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa, fundo'>
-                <Grid alignItems="center" item xs={5} className='caixa1'>
-                    <Typography variant='h3' component='h3' align='center' className='gambs'>
-                        ...
-                    </Typography>
-                    <Typography variant='h3' component='h3' align='center' className='gambs'>
-                        ...
-                    </Typography>
-                    <Box paddingX={20} >
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>Bem vinde!</Typography>
-                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'>A Integrare ajuda você a se conectar e compartilhar com educadores especializados!</Typography>
-                    </Box>
-                    <Box display="flex" justifyContent="center">
-                        <Box>
-                            <Link to="/contatos" className="text-decorator-none">
-                                <Button variant="outlined" className='botao'>Nos conheça melhor</Button>
-                            </Link>
-                        </Box>
-
-                    </Box>
-                </Grid>
-                <Grid item xs={7} className='imagemhome'></Grid>
-
-                <Grid item xs={8}>
-                    <Box paddingLeft={7} >
-                        <img src="" className='imagemhome2' />
-                    </Box>
-                </Grid>
-                <Grid item xs={4} className="caixa">
-                    <Box paddingRight={8}>
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="right" style={{ color: "#424242", fontWeight: "bold" }}>NÓS ACREDITAMOS NA EDUCAÇÃO INCLUSIVA E EQUITATIVA DE QUALIDADE</Typography>
-                        <Typography variant='h3' component='h3' align='center' className='gambs'>
-                            ...
-                        </Typography>
-                        <Typography variant='h3' component='h3' align='center' className='gambs'>
-                            g...
-                        </Typography>
-                    </Box>
-                </Grid>
+        <Grid container direction='row' justifyContent='flex-start' alignItems='center' className='background'>
+            <Grid item xs={8} alignItems='center' className='grid-esquerda'>
+                <Box paddingX={10}><div><img src="https://i.imgur.com/nh6JxLp.png" width={800}/></div></Box>
             </Grid>
+                <Grid  item xs={4} alignItems='center' justifyContent='center'>
+                    <Box className='grid-direita'>
+                    <Box className='box-bemVinde'>
+                         <Typography className='texto, position-text' component='h3' align='center'><h1 className='fonte1'>Bem Vinde!</h1>
+                         <h2 className='fonte'>A Integrare ajuda você a se conectar e compartilhar com educadores especializados!</h2></Typography>
+                         <Box>
+                    <Link to="/contatos" className="text-decorator-none">
+                             <Button className='botao4' variant="outlined">Nos conheça melhor</Button>
+                         </Link>
+                         <Box >
+                             <Typography><p className='text-inf'>NÓS ACREDITAMOS NA EDUCAÇÃO INCLUSIVA E EQUITATIVA DE QUALIDADE</p></Typography>
+                         </Box>
+                    </Box>
+                    </Box>
+                    </Box>
+                </Grid>
+        </Grid>
+
         </>
     );
 }

@@ -69,7 +69,7 @@ function ListaTema() {
 
                                     <Link to={`/formularioTema/${tema.id}`} className="text-decorator-none">
                                         <Box mx={1}>
-                                            <Button variant="contained" className="botao" size='small' color="primary"  >
+                                            <Button variant="contained" className="botao1" size='small' color="primary"  >
                                                 atualizar
                                             </Button>
                                         </Box>
