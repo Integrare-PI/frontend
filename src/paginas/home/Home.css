@@ -16,7 +16,7 @@
 }
 
 .box-bemVinde {
-    width: 450px;
+    width: 430px;
     height: 350px;
     background: #db59fc;
     border: 0.287778px solid #000000;
@@ -40,7 +40,7 @@ body{
 
 .botao4 {
 
-    left: 100px;
+    left: 125px;
     top: 270px;
     color: rgb(6, 5, 5) !important;
 
@@ -72,7 +72,7 @@ body{
     font-family: Poppins;
     font-style:  bold italic;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 25px;
     line-height: 33px;
     text-align: center;
 
@@ -98,7 +98,7 @@ body{
     align-items: flex-start;
     padding-top: 350px;
     width: 24vw;
-    font-size: 52px ;
+    font-size: 30px ;
     font-family: Poppins, sans-serif   ;
     font-weight: 700  ;
     line-height: 1.2 ;

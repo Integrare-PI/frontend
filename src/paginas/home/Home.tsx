@@ -10,7 +10,7 @@ function Home() {
         <>
         <Grid container direction='row' justifyContent='flex-start' alignItems='center' className='background'>
             <Grid item xs={8} alignItems='center' className='grid-esquerda'>
-                <Box paddingX={10}><div><img src="https://i.imgur.com/nh6JxLp.png" width={800}/></div></Box>
+                <Box paddingX={10}><div><img src="https://i.imgur.com/nh6JxLp.png" width={600}/></div></Box>
             </Grid>
                 <Grid  item xs={4} alignItems='center' justifyContent='center'>
                     <Box className='grid-direita'>
