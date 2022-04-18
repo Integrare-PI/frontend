@@ -9,9 +9,9 @@ function Footer(){
     return (
         <>
             <Grid container direction="row" className='fixar' style={{ display: "static", justifyContent: "space-between"}}>
-                    <Box className='top'>
-                        <a className='text-footer' target="_blank" href="https://brasil.generation.org">
-                            <Typography  variant="subtitle2" gutterBottom style={{ color: "black" }} >© 2022 Copyright: brasil.generation.org</Typography>
+                    <Box>
+                        <a target="_blank" className='text-decorator-none2' href="https://brasil.generation.org">
+                            <Typography variant="subtitle2" gutterBottom style={{ color: "black" }} >© 2022 Copyright: brasil.generation.org</Typography>
                         </a>
                     </Box>
                 <Box paddingRight={4}  alignItems="center" justifyContent="center">

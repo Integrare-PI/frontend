@@ -2,8 +2,12 @@
   padding-top: 85px;
   color: #505050!important;
   font-weight: bold !important;
-  font-family: 'Source Sans Pro', sans-serif!important;
+  font-family: 'Source Sans Pro', sans-serif!important;  
   font-size: 65px!important;
+}
+
+.gambs{
+  color: #e3cce100;
 }
 
 .box-fotos{
@@ -28,13 +32,4 @@
 .espaco-letras{
   letter-spacing: 1px!important;
   font-size: 25px!important;
-}
-.logo-integrare{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 100px;
-}
-.padding-bot{
-  padding-bottom: 70px;
 }
