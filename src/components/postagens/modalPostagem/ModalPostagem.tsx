@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
-import { Button, Box } from "@material-ui/core"
+import { Button, Modal } from "@material-ui/core";
+import { Box } from '@mui/material';
 import CloseIcon from '@material-ui/icons/Close';
-import Modal from '@material-ui/core/Modal';
 
 import './ModalPostagem.css';
 import CadastroPost from '../cadastroPost/CadastroPost';
@@ -36,7 +36,7 @@ function ModalPostagem() {
     const classes = useStyles();
 
     const [modalStyle] = React.useState(getModalStyle);
-    
+
     const [open, setOpen] = React.useState(false);
 
     const handleOpen = () => {
@@ -65,6 +65,7 @@ function ModalPostagem() {
                 variant="outlined"
                 className="btnModal"
                 onClick={handleOpen}>Nova Postagem</Button>
+                
             <Modal
                 open={open}
                 onClose={handleClose}
@@ -77,4 +78,4 @@ function ModalPostagem() {
     )
 }
 
-export default ModalPostagem
+export default ModalPostagem;

@@ -1,5 +1,10 @@
-.text-decorator-none2{
-    text-decoration: none!important;
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.text-footer{
+    text-decoration: none;
 }
 
 .text{
