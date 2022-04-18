@@ -10,7 +10,8 @@ import { useSelector } from 'react-redux';
 import { UserState } from '../../../store/tokens/UserReducer';
 
 
-function CadastroPost() {
+
+function CadastroPostAlune() {
     let history = useHistory()
 
     const { id } = useParams<{ id: string }>()
@@ -158,25 +159,17 @@ function CadastroPost() {
                 <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro postagem</Typography>
 
                 <TextField
-                    value={postagem.resposta}
+                    value={postagem.assunto}
                     onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)}
-                    id="resposta" label="resposta" name="resposta" variant="outlined"
-                    margin="normal"
-                    className='resposta'
-                    fullWidth
+                    id="assunto" label="assunto" variant="outlined"
+                    name="assunto" margin="normal" fullWidth
                 />
 
-                <TextField
-                    value={postagem.video}
-                    onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)}
-                    id="video" label="video" name="video" variant="outlined"
-                    margin="normal" fullWidth
-                />
 
                 <TextField
-                    value={postagem.anexo}
+                    value={postagem.texto_descricao}
                     onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)}
-                    id="anexo" label="anexo" name="anexo" variant="outlined"
+                    id="texto_descricao" label="texto_descricao" name="texto_descricao" variant="outlined"
                     margin="normal" fullWidth
                 />
 
@@ -210,4 +203,4 @@ function CadastroPost() {
         </Container>
     )
 }
-export default CadastroPost;
+export default CadastroPostAlune;

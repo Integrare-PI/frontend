@@ -19,6 +19,7 @@ import { ToastContainer } from 'react-toastify';
 import Home from './paginas/home/Home';
 import 'react-toastify/dist/ReactToastify.css'
 import Perfil from './paginas/Perfil/Perfil';
+import CadastroPostAlune from './components/postagens/cadastroPost/CadastroPostAlune';
 
 //atualizado
 
@@ -68,8 +69,16 @@ function App() {
               <CadastroPost />
             </Route>
 
+            <Route exact path='/formularioPostagemAlune'>
+              <CadastroPostAlune />
+            </Route>
+
             <Route exact path='/formularioPostagem/:id'>
               <CadastroPost />
+            </Route>
+
+            <Route exact path='/formularioPostagemAlune/:id'>
+              <CadastroPostAlune />
             </Route>
 
             <Route exact path='/formularioTema'>
