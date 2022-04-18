@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import {Typography, Button, Card, CardActions, CardContent } from "@material-ui/core"
-import { Box } from '@mui/material';
+import {Typography, Button, Box, Card, CardActions, CardContent } from "@material-ui/core"
 import './DeletarPostagem.css';
 import Postagem from '../../../models/Postagem';
 import { useHistory, useParams } from 'react-router-dom';

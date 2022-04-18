@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { Card, CardActions, CardContent, Button, Typography, IconButton } from '@material-ui/core';
-import { Box } from '@mui/material';
-import { Link, useHistory } from 'react-router-dom';
+import React, { useEffect, useState } from 'react'
+import { Box, Card, CardActions, CardContent, Button, Typography, IconButton } from '@material-ui/core';
+import { Link, useHistory } from 'react-router-dom'
 import { busca, buscaId, put } from '../../../services/Services';
 import useLocalStorage from 'react-use-localstorage';
 import Postagem from '../../../models/Postagem';

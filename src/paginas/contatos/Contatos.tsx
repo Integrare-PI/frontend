@@ -1,20 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Typography, Grid, Button } from '@material-ui/core';
+import { Typography, Box, Grid, Button } from '@material-ui/core';
 import './Contatos.css';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import { Box } from '@mui/material';
 
 function Contatos() {
     return (
         <>
             <Grid>
-                <Grid xs={12}>
-                    <Grid container justifyContent='center'>
-                        <Grid item xs={6} className="logo-integrare">
+                <Grid xs={12}  >
+                    <Grid container justifyContent="center">
+                        <Grid item xs={6}>
+                            <Typography variant='h3' component='h3' align='center' className='gambs'>
+                                ...
+                            </Typography>
+                            <Typography variant='h3' component='h3' align='center' className='gambs'>
+                                ...
+                            </Typography>
                             <Box >
-                                <img src="https://i.imgur.com/Jbxbkjh.png" alt="logo integrare" style={{ width: "800px", height: "300px" }} />
+                                <img src="https://i.ibb.co/YftYjj0/Integrare-1.png" alt="logo integrare" style={{ width: "800px", height: "400px" }} />
                             </Box>
                         </Grid>
                     </Grid>
@@ -85,7 +90,7 @@ function Contatos() {
                     </Grid>
                 </Grid>
 
-                <Grid container xs={12} className="padding-bot" justifyContent='center' alignItems='center' >
+                <Grid container xs={12} justifyContent='center' alignItems='center' >
                     <Box justifyContent="center" alignItems="center">
                         <Box justifyContent="center" alignItems="center" >
                             <img className='box-fotos' src="https://i.ibb.co/h937w0b/euzinho-1.png" alt="Bruno Requena" />
@@ -255,6 +260,12 @@ function Contatos() {
                         </Box>
                     </Box>
                 </Grid>
+                <Typography variant='h3' component='h3' align='center' className='gambs'>
+                    ...
+                </Typography>
+                <Typography variant='h3' component='h3' align='center' className='gambs'>
+                    ...
+                </Typography>
             </Grid>
         </>
     );

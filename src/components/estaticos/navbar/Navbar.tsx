@@ -1,5 +1,4 @@
-import { AppBar, Button, Toolbar, Typography } from '@material-ui/core';
-import { Box } from '@mui/material';
+import { AppBar, Box, Button, Toolbar, Typography } from '@material-ui/core';
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useHistory } from 'react-router-dom';
